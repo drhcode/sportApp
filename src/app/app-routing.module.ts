@@ -6,7 +6,7 @@ import { ResultsComponent } from './section/results/results.component';
 import { TeamsComponent } from './section/teams/teams.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent },
+  { path: '', component: HomeComponent },
   { path: 'teams', component: TeamsComponent },
   { path: 'news', component: NewsComponent },
   { path: 'results', component: ResultsComponent },

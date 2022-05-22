@@ -1,14 +1,55 @@
-<app-navbar></app-navbar>
-<div class="row no-gutters p-5">
-  <div
-    class="col-12 col-sm-6 col-md-8"
-    [ngStyle]="{
-      background: 'url(' + homePhoto + ')  no-repeat 0 0',
-      height: '20rem',
-      width: '65rem'
-    }"
-  >
-    <img src="assets/img/icons.png" alt="" />
+<!-- Main Section  -->
+<div class="container p-5">
+  <div class="row">
+    <div class="col">Live Results</div>
+    <div class="col-6 main" role="main">
+      <div class="col">
+        <div class="home-img">
+          <img src="assets/img/home.png" />
+        </div>
+      </div>
+      <div class="col">
+        <div class="home-info"></div>
+        <h5>Weekly Football Challenge</h5>
+      </div>
+    </div>
+    <div class="col">
+      <p>Trending Now &nbsp; &nbsp; &nbsp; &#8594; &#8592;</p>
+    </div>
   </div>
-  <div class="col-6 col-md-4">hello</div>
+
+  <!-- Latest Matches, Filter, View All  -->
+  <div class="container p-5">
+    <div class="row">
+      <div class="col matches">
+        <h5>Latest Matches</h5>
+      </div>
+      <div class="col">
+        <div class="btn-group">
+          <button class="btn btn-secondary btn-sm" type="button">
+            Filter:
+          </button>
+          <span
+            type="button"
+            class="dropdown-toggle dropdown-toggle-split"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <input
+              type="text"
+              placeholder="
+            Football"
+            />
+          </span>
+          <div class="dropdown-menu">
+            <a href="#">Matches</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <p>View All</p>
+      </div>
+    </div>
+  </div>
 </div>
