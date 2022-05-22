@@ -9,6 +9,7 @@ import { HomeComponent } from './section/home/home.component';
 import { TeamsComponent } from './section/teams/teams.component';
 import { ResultsComponent } from './section/results/results.component';
 import { NewsComponent } from './section/news/news.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { NewsComponent } from './section/news/news.component';
     HomeComponent,
     TeamsComponent,
     ResultsComponent,
-    NewsComponent
+    NewsComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
