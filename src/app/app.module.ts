@@ -18,8 +18,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     HomeComponent,
     TeamsComponent,
     ResultsComponent,
-    NewsComponent,
     NavbarComponent
+    NewsComponent
   ],
   imports: [
     BrowserModule,
