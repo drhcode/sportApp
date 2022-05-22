@@ -9,7 +9,7 @@ import { HomeComponent } from './section/home/home.component';
 import { TeamsComponent } from './section/teams/teams.component';
 import { ResultsComponent } from './section/results/results.component';
 import { NewsComponent } from './section/news/news.component';
-import { NavbarComponent } from './navbar/navbar.component';
+import { NavbarComponent } from './core/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -19,14 +19,10 @@ import { NavbarComponent } from './navbar/navbar.component';
     TeamsComponent,
     ResultsComponent,
     NewsComponent,
-    NavbarComponent
+    NavbarComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    NgbModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
