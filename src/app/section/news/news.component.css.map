@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAAA,AAAA,UAAU,CAAC;EACP,gBAAgB,EAAE,OAAO;CAC5B;;AAED,AAAA,IAAI,CAAC;EACD,KAAK,EAAE,IAAI;CACd",
     "sources": [
         "news.component.scss"
     ],

@@ -1,55 +1,146 @@
 <!-- Main Section  -->
-<div class="container p-5">
+<div class="container">
   <div class="row">
-    <div class="col">Live Results</div>
-    <div class="col-6 main" role="main">
-      <div class="col">
-        <div class="home-img">
-          <img src="assets/img/home.png" />
-        </div>
+    <div class="col">
+      <div class="live-matches">
+        <h5>Live Matches &#8592; &#8594;</h5>
       </div>
-      <div class="col">
-        <div class="home-info"></div>
-        <h5>Weekly Football Challenge</h5>
+      <div class="live-icons">
+        <img src="assets/img/teams-logo/manchester.png" />
+        <h5>&nbsp; 3 : 2 &nbsp;</h5>
+        <img src="assets/img/teams-logo/realmadrid.png" />
+      </div>
+
+      <div class="teams">
+        <h5>Teams</h5>
       </div>
     </div>
-    <div class="col">
-      <p>Trending Now &nbsp; &nbsp; &nbsp; &#8594; &#8592;</p>
+    <div class="col-8">
+      <div class="home-img">
+        <div class="info">
+          <h4>Weekly Football <br />Challenge</h4>
+        </div>
+        <div class="logo-home">
+          <img src="assets/img/icons.png" />
+        </div>
+        <div class="clock">
+          <i class="fa-solid fa-clock"> 17: 00 </i>&nbsp; &nbsp;
+          <i class="fa-solid fa-location-check">London</i>
+        </div>
+      </div>
+    </div>
+    <div class="col trending-section">
+      <div class="trendig">
+        <p>Trending now &#8592; &#8594;</p>
+        <div class="trending-img">
+          <img
+            src="assets\img\logo.png"
+            width="100"
+            height="100"
+            class="rounded-circle"
+          />
+        </div>
+        <div class="best-player">
+          <h6>Best Player</h6>
+          <i class="fa-solid fa-futbol">300 Goals</i>
+        </div>
+        <div class="d-flex justify-content-center">
+          <button type="button" class="btn btn-outline-info">
+            View Profile
+          </button>
+        </div>
+      </div>
     </div>
   </div>
 
   <!-- Latest Matches, Filter, View All  -->
-  <div class="container p-5">
-    <div class="row">
-      <div class="col matches">
-        <h5>Latest Matches</h5>
-      </div>
-      <div class="col">
-        <div class="btn-group">
-          <button class="btn btn-secondary btn-sm" type="button">
-            Filter:
-          </button>
-          <span
-            type="button"
-            class="dropdown-toggle dropdown-toggle-split"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            <input
-              type="text"
-              placeholder="
-            Football"
-            />
-          </span>
-          <div class="dropdown-menu">
-            <a href="#">Matches</a>
-          </div>
+  <div class="container pt-4">
+    <div class="row justify-content-md-center">
+      <div class="col col-lg-2">
+        <div class="latest-matches">
+          <h5>Latest Matches</h5>
         </div>
       </div>
-      <div class="col">
-        <p>View All</p>
+      <div class="col-md-auto">
+        <div class="filter-data">
+          <select name="football" id="competitons">
+            <option value="football">Football</option>
+            <option value="Volley">Volley</option>
+            <option value="basketball">Basketball</option>
+          </select>
+          <select name="results" id="results">
+            <option value="5 vs 5">5 vs 5</option>
+            <option value="6 vs 6">6 vs 6</option>
+            <option value="7 vs 7">7 vs 7</option>
+          </select>
+          <select name="location" id="location">
+            <option value="London">London</option>
+            <option value="Bayern">Bayern</option>
+          </select>
+        </div>
       </div>
+      <div class="col col-lg-2">
+        <button class="btn btn-info">View All</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- filtered matches section -->
+<div class="row justify-content-end pt-3">
+  <div class="col-4">
+    <div class="col align-self-center live-icons">
+      <img src="assets/img/teams-logo/manchester.png" />
+      <h5>vs</h5>
+      <img src="assets/img/teams-logo/realmadrid.png" />
+    </div>
+  </div>
+  <div class="col-4">
+    <div class="create-game">
+      <h5>Create Game</h5>
+      <form>
+        <div class="form-group mb-2">
+          <input
+            type="text"
+            class="form-control"
+            id="gametype"
+            placeholder="Game Type"
+            list="gametype"
+          />
+          <datalist id="gametype">
+            <option>Football</option>
+            <option>Football</option>
+          </datalist>
+        </div>
+        <div class="form-group mb-2">
+          <input
+            type="text"
+            class="form-control"
+            id="location"
+            placeholder="Select Location"
+          />
+        </div>
+        <div class="form-group mb-2">
+          <input
+            type="text"
+            class="form-control"
+            id="select-ground"
+            placeholder="Select Ground"
+          />
+        </div>
+        <div class="form-group mb-2">
+          <input type="date" class="form-control" id="dateofgame" />
+        </div>
+        <div class="form-group mb-2">
+          <input
+            type="number"
+            class="form-control"
+            id="numberofplayer"
+            placeholder="Number of players"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
     </div>
   </div>
 </div>

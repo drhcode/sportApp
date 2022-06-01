@@ -10,6 +10,7 @@ import { TeamsComponent } from './section/teams/teams.component';
 import { ResultsComponent } from './section/results/results.component';
 import { NewsComponent } from './section/news/news.component';
 import { NavbarComponent } from './core/navbar/navbar.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,7 @@ import { NavbarComponent } from './core/navbar/navbar.component';
     NewsComponent,
     NavbarComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, NgbModule],
+  imports: [BrowserModule, AppRoutingModule, NgbModule, FontAwesomeModule],
   providers: [],
   bootstrap: [AppComponent],
 })
