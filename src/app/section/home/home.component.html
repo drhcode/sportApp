@@ -15,6 +15,9 @@
         <h5>Teams</h5>
       </div>
     </div>
+
+    <!-- *******-->
+
     <div class="col-8">
       <div class="home-img">
         <div class="info">
@@ -24,11 +27,24 @@
           <img src="assets/img/icons.png" />
         </div>
         <div class="clock">
-          <i class="fa-solid fa-clock"> 17: 00 </i>&nbsp; &nbsp;
-          <i class="fa-solid fa-location-check">London</i>
+          <i class="fa-solid fa-clock"></i> 17: 00 &nbsp; &nbsp;
+          <i class="fa-solid fa-map-marker"></i> London
+        </div>
+        <div class="players">
+          <div class="player-images">
+            <img src="assets/img/players/1.jpg" alt="" />
+            <img src="assets/img/players/2.jpg" alt="" />
+            <img src="assets/img/players/3.jpg" alt="" />
+          </div>
+          <button class="btn bg-white color-black join-button" type="button">
+            Join now <i class="fa-solid fa-arrow-right"></i>
+          </button>
         </div>
       </div>
     </div>
+
+    <!-- *******-->
+
     <div class="col trending-section">
       <div class="trendig">
         <p>Trending now &#8592; &#8594;</p>
@@ -61,6 +77,9 @@
           <h5>Latest Matches</h5>
         </div>
       </div>
+
+      <!-- ******* Filtered matches controller ******-->
+
       <div class="col-md-auto">
         <div class="filter-data">
           <select name="football" id="competitons">
@@ -89,12 +108,16 @@
 <!-- filtered matches section -->
 <div class="row justify-content-end pt-3">
   <div class="col-4">
-    <div class="col align-self-center live-icons">
+    <div class="col justify-content-between live-icons">
       <img src="assets/img/teams-logo/manchester.png" />
-      <h5>vs</h5>
+      <h6>Team 1</h6>
+      <small>vs</small>
       <img src="assets/img/teams-logo/realmadrid.png" />
+      <h6>Team 2</h6>
     </div>
   </div>
+
+  <!-- create game section -->
   <div class="col-4">
     <div class="create-game">
       <h5>Create Game</h5>

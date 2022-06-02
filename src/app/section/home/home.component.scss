@@ -44,6 +44,20 @@
     font-size: 15px;
   }
 }
+.players {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  margin-left: 20rem;
+  gap: 8.6rem;
+}
+.players img {
+  height: 1.8rem;
+  width: 1.8rem;
+  border-radius: 50%;
+  margin-right: -0.5rem;
+  border: 3px solid #e2ebf2;
+}
 
 // live matche style
 
