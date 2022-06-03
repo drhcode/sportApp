@@ -1,11 +1,21 @@
+* {
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.lives {
+  height: 300px;
+  width: 1400px;
+}
+
 .home-img {
   background-image: url(/assets/img/home.png);
   background-repeat: no-repeat;
   background-position: left bottom;
-  background-size: 80%;
-  width: 1500px;
+  background-size: cover;
   padding: 80px;
 }
+
 .col-8 {
   background: rgb(1, 92, 24);
   background: linear-gradient(
@@ -16,6 +26,7 @@
   );
   border-radius: 1rem;
 }
+
 .info {
   display: flex;
   flex-direction: column;
@@ -59,14 +70,24 @@
   border: 3px solid #e2ebf2;
 }
 
-// live matche style
+// live matches style
 
 .live-matches {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: left;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  justify-content: center;
+  padding-bottom: 5.2rem;
+  padding-top: 1.5rem;
+  background-color: #e2ebf2;
+  border-radius: 10px;
+  padding-left: 1rem;
+  height: 750px;
+  h1 {
+    font-size: 1.2rem;
+  }
+}
+
+.teams a {
+  text-decoration: none;
 }
 
 .live-icons {
@@ -77,18 +98,20 @@
 }
 
 .live-icons img {
-  width: 40px;
-  height: 45px;
-  margin: 0 10px 5px 0;
+  width: 30px;
+  height: 32px;
+  margin: 0.2rem;
 }
 
 // trending now style
 
 .trending-section {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  margin-top: 2rem;
+  padding-bottom: 6.5rem;
+  padding-top: 1.5rem;
+  background-color: #e2ebf2;
+  border-radius: 10px;
 
   .best-player {
     display: flex;
@@ -109,14 +132,24 @@
 // filter section style
 
 .filter-data select {
-  background-color: rgb(255, 255, 255);
-  font-size: 15px;
+  background-color: #e2ebf2;
+  font-size: 20px;
   margin-left: 5px;
   padding: 5px;
   border: 1px solid rgb(141, 138, 138);
   border-radius: 5px;
 }
+.filtered-matches {
+  position: relative;
+  width: 680px;
+}
 
+.filtered-matches-1 {
+  background-color: #e2ebf2;
+  padding: 0.5rem;
+  border-radius: 10px;
+  margin: 10px;
+}
 .create-game select {
   margin-left: 5px;
   padding: 5px;
