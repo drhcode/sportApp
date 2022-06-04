@@ -11,6 +11,7 @@ import { ResultsComponent } from './section/results/results.component';
 import { NewsComponent } from './section/news/news.component';
 import { NavbarComponent } from './core/navbar/navbar.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { SingleNewsComponent } from './section/news/single-news/single-news.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     ResultsComponent,
     NewsComponent,
     NavbarComponent,
+    SingleNewsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule, FontAwesomeModule],
   providers: [],
