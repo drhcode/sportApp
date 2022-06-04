@@ -6,6 +6,7 @@ interface Teams {
   name: String;
   country: String;
   description: String;
+  logo: String;
 }
 
 @Component({
@@ -14,5 +15,5 @@ interface Teams {
   styleUrls: ['./teams.component.scss'],
 })
 export class TeamsComponent {
-  teams: Teams[] = teamsData;
+  teams = teamsData;
 }
