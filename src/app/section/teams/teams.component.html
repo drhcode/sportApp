@@ -1,1 +1,10 @@
-<p>teams works!</p>
+<div class="container p-4" *ngFor="let team of teams">
+  <div class="col-sm">
+    <h6>{{ team.name }}</h6>
+    <img src="{{ team.logo }}" alt="" />
+    <p>{{ team.description }}</p>
+    <br />
+    <button class="btn btn-info">More Info</button>
+    <hr />
+  </div>
+</div>

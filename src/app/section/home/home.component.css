@@ -1,6 +1,5 @@
-.main {
-  background-color: green;
-  width: 70%;
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
-
 /*# sourceMappingURL=home.component.css.map */
