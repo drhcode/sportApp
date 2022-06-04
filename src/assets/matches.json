@@ -1,0 +1,72 @@
+[
+  {
+    "time": "19.30",
+    "location": "London",
+    "Manchester": {
+      "name": "Manchester City",
+      "score": 3,
+      "logo": "assets/img/teams-logo/manchester.png"
+    },
+    "Aston Villa": {
+      "name": "Aston Villa",
+      "score": 2,
+      "logo": "assets/img/teams-logo/astonvilla.png"
+    }
+  },
+  {
+    "time": "19.30",
+    "location": "Lisbon",
+    "West Ham": {
+      "name": "West Ham",
+      "score": 2,
+      "logo": "assets/img/teams-logo/westham.png"
+    },
+    "Stoke City": {
+      "name": "Stoke City",
+      "score": 3,
+      "logo": "assets/img/teams-logo/stokecity.png"
+    }
+  },
+  {
+    "time": "19.30",
+    "location": "London",
+    "Sunderland": {
+      "name": "Sunderland",
+      "score": 1,
+      "logo": "assets/img/teams-logo/sunderland.png"
+    },
+    "Everton": {
+      "name": "Everton",
+      "score": 2,
+      "logo": "assets/img/teams-logo/everton.png"
+    }
+  },
+  {
+    "time": "19.30",
+    "location": "London",
+    "Manchester City": {
+      "name": "Manchester City",
+      "score": 2,
+      "logo": "assets/img/teams-logo/manchester.png"
+    },
+    "Aston Villa": {
+      "name": "Aston Villa",
+      "score": 2,
+      "logo": "assets/img/teams-logo/astonvilla.png"
+    }
+  },
+  {
+    "time": "19.30",
+    "location": "London",
+    "Everton": {
+      "name": "Everton",
+      "score": 2,
+      "logo": "assets/img/teams-logo/everton.png"
+    },
+    "Stoke City": {
+      "name": "Stoke City",
+      "score": 2,
+      "logo": "assets/img/teams-logo/stokecity.png"
+    }
+  }
+]

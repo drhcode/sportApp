@@ -17,57 +17,9 @@
           </div>
           <div class="teams">
             <h1>Teams</h1>
-            <div class="teams-list live-icons">
+            <div class="teams-list live-icons" *ngFor="let team of homeTeams">
               <img src="assets/img/teams-logo/manchester.png" />
-              <h6>Team 1</h6>
-              &nbsp;&nbsp;
-              <a href="#"
-                >See profile &nbsp;<i class="fa-solid fa-arrow-right"> </i
-              ></a>
-            </div>
-            <div class="teams-list live-icons">
-              <img src="assets/img/teams-logo/manchester.png" />
-              <h6>Team 1</h6>
-              &nbsp;&nbsp;
-              <a href="#"
-                >See profile &nbsp;<i class="fa-solid fa-arrow-right"> </i
-              ></a>
-            </div>
-            <div class="teams-list live-icons">
-              <img src="assets/img/teams-logo/manchester.png" />
-              <h6>Team 1</h6>
-              &nbsp;&nbsp;
-              <a href="#"
-                >See profile &nbsp;<i class="fa-solid fa-arrow-right"> </i
-              ></a>
-            </div>
-            <div class="teams-list live-icons">
-              <img src="assets/img/teams-logo/manchester.png" />
-              <h6>Team 1</h6>
-              &nbsp;&nbsp;
-              <a href="#"
-                >See profile &nbsp;<i class="fa-solid fa-arrow-right"> </i
-              ></a>
-            </div>
-            <div class="teams-list live-icons">
-              <img src="assets/img/teams-logo/manchester.png" />
-              <h6>Team 1</h6>
-              &nbsp;&nbsp;
-              <a href="#"
-                >See profile &nbsp;<i class="fa-solid fa-arrow-right"> </i
-              ></a>
-            </div>
-            <div class="teams-list live-icons">
-              <img src="assets/img/teams-logo/manchester.png" />
-              <h6>Team 1</h6>
-              &nbsp;&nbsp;
-              <a href="#"
-                >See profile &nbsp;<i class="fa-solid fa-arrow-right"> </i
-              ></a>
-            </div>
-            <div class="teams-list live-icons">
-              <img src="assets/img/teams-logo/manchester.png" />
-              <h6>Team 1</h6>
+              <h6>{{ team.name }}</h6>
               &nbsp;&nbsp;
               <a href="#"
                 >See profile &nbsp;<i class="fa-solid fa-arrow-right"> </i
@@ -78,29 +30,18 @@
           <!-- *** Best Players *** -->
           <div class="teams">
             <h1>Best players</h1>
-            <div class="teams-list live-icons">
+            <div
+              class="teams-list live-icons"
+              *ngFor="let player of findBestPlayer(Players)"
+            >
               <img src="assets/img/teams-logo/manchester.png" />
-              <h6>Player 1</h6>
+              <h6>{{ player.firstName }}</h6>
               &nbsp;&nbsp;
-              <a href="#">60 &nbsp;<i class="fa-solid fa-chart-column"></i></a>
-            </div>
-            <div class="teams-list live-icons">
-              <img src="assets/img/teams-logo/manchester.png" />
-              <h6>Player 2</h6>
-              &nbsp;&nbsp;
-              <a href="#">60 &nbsp;<i class="fa-solid fa-chart-column"></i></a>
-            </div>
-            <div class="teams-list live-icons">
-              <img src="assets/img/teams-logo/manchester.png" />
-              <h6>Player 3</h6>
-              &nbsp;&nbsp;
-              <a href="#">60 &nbsp;<i class="fa-solid fa-chart-column"></i></a>
-            </div>
-            <div class="teams-list live-icons">
-              <img src="assets/img/teams-logo/manchester.png" />
-              <h6>Player 4</h6>
-              &nbsp;&nbsp;
-              <a href="#">60 &nbsp;<i class="fa-solid fa-chart-column"></i></a>
+              <a href="#"
+                >{{ player.goals }} &nbsp;<i
+                  class="fa-solid fa-chart-column"
+                ></i
+              ></a>
             </div>
           </div>
         </div>
@@ -150,9 +91,12 @@
               class="rounded-circle"
             />
           </div>
-          <div class="best-player">
-            <h6>Best Player</h6>
-            <small> <i class="fa-solid fa-futbol"></i> &nbsp;300 Goals</small>
+          <div class="best-player" *ngFor="let player of bestPlayer(Players)">
+            <h6>{{ player.firstName }} {{ player.lastName }}</h6>
+            <small>
+              <i class="fa-solid fa-futbol"></i> &nbsp;
+              {{ player.goals }} Goals<</small
+            >
           </div>
           <div class="d-flex justify-content-center">
             <button type="button" class="btn btn-outline-info">
