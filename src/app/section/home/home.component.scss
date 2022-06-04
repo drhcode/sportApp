@@ -88,13 +88,21 @@
 
 .teams a {
   text-decoration: none;
+  font-size: 0.8rem;
+}
+
+.team-list h6 {
+  font-size: 0.4rem;
+}
+.teams-list a {
+  color: green;
 }
 
 .live-icons {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 3rem;
+  margin-bottom: 0.5rem;
 }
 
 .live-icons img {
@@ -149,6 +157,11 @@
   padding: 0.5rem;
   border-radius: 10px;
   margin: 10px;
+}
+.filtered-matches-1 a {
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: black;
 }
 .create-game select {
   margin-left: 5px;
