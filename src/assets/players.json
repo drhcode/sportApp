@@ -1,6 +1,6 @@
 [
   {
-    "player_id": 1003,
+    "playerID": 1003,
     "firstName": "Hector",
     "lastName": "Bellerin",
     "teamID": "Aston Villa FC",
@@ -8,7 +8,7 @@
     "goals": 21
   },
   {
-    "player_id": 1101,
+    "playerID": 1101,
     "firstName": "Petr",
     "lastName": "Cech",
     "teamID": "Aston Villa FC",
@@ -16,7 +16,7 @@
     "goals": 28
   },
   {
-    "player_id": 1402,
+    "playerID": 1402,
     "firstName": "Olivier",
     "lastName": "Giroud",
     "teamID": "West Ham United FC",
@@ -24,7 +24,7 @@
     "goals": 24
   },
   {
-    "player_id": 1027,
+    "playerID": 1027,
     "firstName": "Alex",
     "lastName": "Iwobi",
     "teamID": "West Ham United FC",
@@ -32,7 +32,7 @@
     "goals": 35
   },
   {
-    "player_id": 1009,
+    "playerID": 1009,
     "firstName": "Laurent",
     "lastName": "Koscielny",
     "teamID": "Stoke City FC",
@@ -40,7 +40,7 @@
     "goals": 39
   },
   {
-    "player_id": 1033,
+    "playerID": 1033,
     "firstName": "Mesut",
     "lastName": "Ozil",
     "teamID": "Stoke City FC",
@@ -48,7 +48,7 @@
     "goals": 31
   },
   {
-    "player_id": 1048,
+    "playerID": 1048,
     "firstName": "Alexis",
     "lastName": "Sunderland FC",
     "teamID": "Everton FC",
@@ -56,7 +56,7 @@
     "goals": 22
   },
   {
-    "player_id": 1041,
+    "playerID": 1041,
     "firstName": "Theo",
     "lastName": "Walcott",
     "teamID": "Sunderland FC",
@@ -64,7 +64,7 @@
     "goals": 31
   },
   {
-    "player_id": 1404,
+    "playerID": 1404,
     "firstName": "Marcos",
     "lastName": "Alonso",
     "teamID": "Everton FC",
@@ -72,7 +72,7 @@
     "goals": 21
   },
   {
-    "player_id": 1201,
+    "playerID": 1201,
     "firstName": "Cesar",
     "lastName": "Azpilicueta",
     "teamID": "Everton FC",
@@ -80,7 +80,7 @@
     "goals": 24
   },
   {
-    "player_id": 1304,
+    "playerID": 1304,
     "firstName": "Gary",
     "lastName": "Cahill",
     "team": "Manchester City FC",
@@ -88,7 +88,7 @@
     "goals": 21
   },
   {
-    "player_id": 1043,
+    "playerID": 1043,
     "firstName": "Diego",
     "lastName": "Costa",
     "teamID": "Manchester City FC",

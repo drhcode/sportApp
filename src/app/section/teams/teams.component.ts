@@ -7,6 +7,7 @@ export interface Teams {
   country: String;
   description: String;
   logo: String;
+  players: String;
 }
 
 @Component({

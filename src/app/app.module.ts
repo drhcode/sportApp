@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ExampleComponent } from './example/example.component';
@@ -11,6 +10,8 @@ import { ResultsComponent } from './section/results/results.component';
 import { NewsComponent } from './section/news/news.component';
 import { NavbarComponent } from './core/navbar/navbar.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { TeamplayersPipe } from './shared/pipes/teamplayers.pipe';
+import { HttpClientModule } from '@angular/common/http';
 // import { BestPlayer } from './shared/pipes/best-player.pipe';
 
 @NgModule({
@@ -22,8 +23,15 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     ResultsComponent,
     NewsComponent,
     NavbarComponent,
+    TeamplayersPipe,
   ],
-  imports: [BrowserModule, AppRoutingModule, NgbModule, FontAwesomeModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    NgbModule,
+    HttpClientModule,
+    FontAwesomeModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

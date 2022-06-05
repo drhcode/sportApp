@@ -1,8 +1,11 @@
 <div class="container p-4" *ngFor="let team of teams">
   <div class="col-sm">
-    <p>{{ team.name }}</p>
+    <p>Team Name: {{ team.name }}</p>
     <img src="{{ team.logo }}" alt="" />
+    <h1>Info</h1>
     <p>{{ team.description }}</p>
+    <h1>Players</h1>
+    <li>{{ team.players }}</li>
     <br />
     <button class="btn btn-info">More Info</button>
     <hr />

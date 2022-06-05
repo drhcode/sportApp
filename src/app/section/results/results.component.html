@@ -1,9 +1,12 @@
 <div class="container">
-  <div class="row" *ngFor="let result of matches">
-    <div class="results">
-      <h6>Team1</h6>
-      <h6>{{ result.time }}</h6>
-      <h6>Team1</h6>
-    </div>
+  <h1>{{ pageTitle }}</h1>
+  <div class="results" *ngFor="let result of matches">
+    <img src="{{ result.team1logo }}" />
+    <h6>{{ result.team1 }}</h6>
+    <h6>{{ result.team1goals }}</h6>
+    <small> - </small>
+    <h6>{{ result.team2goals }}</h6>
+    <h6>{{ result.team2 }}</h6>
+    <img src="{{ result.team1logo }}" />
   </div>
 </div>

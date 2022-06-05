@@ -1,5 +1,15 @@
 .results {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  background-color: rgb(185, 255, 185);
+  padding: 1.5rem;
+  width: 50rem;
+  border-radius: 1rem;
+  margin: 0.5rem;
+
+  img {
+    width: 30px;
+    height: 30px;
+  }
 }
