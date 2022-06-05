@@ -5,7 +5,8 @@ form {
   display: flex;
   padding: 2px;
   border: 1px solid currentColor;
-  border-radius: 5px;
+  border-radius: 10%;
+  width: 555px;
 }
 
 input[type="search"] {
@@ -17,6 +18,7 @@ input[type="search"] {
   color: inherit;
   border: 1px solid transparent;
   border-radius: inherit;
+  width: 500px;
 }
 
 input[type="search"]::-webkit-input-placeholder {
@@ -50,5 +52,26 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
   opacity: 1;
+}
+
+.navigation-items{
+
+  width: 70px;
+  left: 136px;
+  top: 46px;
+  margin-left: 2%;
+  margin-right: 2%;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+
+  a {
+    color: #000000;
+  }
+  
+  
 }
 /*# sourceMappingURL=navbar.component.css.map */
