@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import teamsData from 'src/assets/teams.json';
 
-interface Teams {
+export interface Teams {
   team_id: String;
   name: String;
   country: String;
