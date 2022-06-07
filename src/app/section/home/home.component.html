@@ -34,8 +34,8 @@
               class="teams-list live-icons"
               *ngFor="let player of findBestPlayer(Players)"
             >
-              <img src="assets/img/teams-logo/manchester.png" />
-              <h6>{{ player.firstName }}</h6>
+              <img src="{{ player.logo }}" />
+              <h6>{{ player.firstName }} {{ player.lastName }}</h6>
               &nbsp;&nbsp;
               <a href="#"
                 >{{ player.goals }} &nbsp;<i
@@ -83,15 +83,9 @@
             <a href="#"><i class="fa-solid fa-arrow-left"> </i></a> &nbsp;
             <a href="#"><i class="fa-solid fa-arrow-right"> </i></a>
           </h6>
-          <div class="trending-img">
-            <img
-              src="assets\img\logo.png"
-              width="100"
-              height="100"
-              class="rounded-circle"
-            />
-          </div>
+
           <div class="best-player" *ngFor="let player of bestPlayer(Players)">
+            <img src="{{ player.logo }}" />
             <h6>{{ player.firstName }} {{ player.lastName }}</h6>
             <small>
               <i class="fa-solid fa-futbol"></i> &nbsp;
@@ -128,18 +122,17 @@
           <option value="basketball">Basketball</option>
         </select>
         <select name="results" id="results">
-          <option value="5 vs 5">5 vs 5</option>
-          <option value="6 vs 6">6 vs 6</option>
-          <option value="7 vs 7">7 vs 7</option>
+          <option value="2021">2021</option>
+          <option value="2022">2022</option>
         </select>
         <select name="location" id="location">
-          <option value="London">London</option>
-          <option value="Bayern">Bayern</option>
+          <option value="London" onClick="filterLocation()">London</option>
+          <option value="Bayern">Lisbon</option>
         </select>
       </div>
     </div>
     <div class="col col-lg-2">
-      <button class="btn btn-info">View All</button>
+      <a class="btn btn-info" href="/results">View All</a>
     </div>
   </div>
 </div>
@@ -147,51 +140,15 @@
 <!-- filtered matches section -->
 <div class="row justify-content-end pt-2">
   <div class="col-4 mt-4 filtered-matches">
-    <div class="col filtered-matches-1 justify-content-between live-icons">
-      <img src="assets/img/teams-logo/manchester.png" />
-      <h6>Team 1</h6>
-      <small>vs</small>
-      <img src="assets/img/teams-logo/realmadrid.png" />
-      <h6>Team 2</h6>
-      <i class="fa-solid fa-clock"></i> 17: 00 &nbsp; &nbsp;
-      <i class="fa-solid fa-map-marker"></i> London
-      <i class="fa fa-heart" style="font-size: 25px"></i>
-      <a href="#"
-        >View Details &nbsp;<i class="fa-solid fa-arrow-right"> </i
-      ></a>
-    </div>
-    <div class="col filtered-matches-1 justify-content-between live-icons">
-      <img src="assets/img/teams-logo/manchester.png" />
-      <h6>Team 1</h6>
-      <small>vs</small>
-      <img src="assets/img/teams-logo/realmadrid.png" />
-      <h6>Team 2</h6>
-      <i class="fa-solid fa-clock"></i> 17: 00 &nbsp; &nbsp;
-      <i class="fa-solid fa-map-marker"></i> London
-      <i class="fa fa-heart" style="font-size: 25px; color: red"></i>
-      <a href="#"
-        >View Details &nbsp;<i class="fa-solid fa-arrow-right"> </i
-      ></a>
-    </div>
-    <div class="col filtered-matches-1 justify-content-between live-icons">
-      <img src="assets/img/teams-logo/manchester.png" />
-      <h6>Team 1</h6>
-      <small>vs</small>
-      <img src="assets/img/teams-logo/realmadrid.png" />
-      <h6>Team 2</h6>
-      <i class="fa-solid fa-clock"></i> 17: 00 &nbsp; &nbsp;
-      <i class="fa-solid fa-map-marker"></i> London
-      <i class="fa fa-heart" style="font-size: 25px"></i>
-      <a href="#"
-        >View Details &nbsp;<i class="fa-solid fa-arrow-right"> </i
-      ></a>
-    </div>
-    <div class="col filtered-matches-1 justify-content-between live-icons">
-      <img src="assets/img/teams-logo/manchester.png" />
-      <h6>Team 1</h6>
-      <small>vs</small>
-      <img src="assets/img/teams-logo/realmadrid.png" />
-      <h6>Team 2</h6>
+    <div
+      class="col filtered-matches-1 justify-content-between live-icons"
+      *ngFor="let info of latestMatches(Matches)"
+    >
+      <img src="{{ info.team1logo }}" />
+      <h6>{{ info.team1 }}</h6>
+      <small> VS </small>
+      <h6>{{ info.team2 }}</h6>
+      <img src="{{ info.team2logo }}" />
       <i class="fa-solid fa-clock"></i> 17: 00 &nbsp; &nbsp;
       <i class="fa-solid fa-map-marker"></i> London
       <i class="fa fa-heart" style="font-size: 25px"></i>

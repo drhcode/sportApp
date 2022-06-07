@@ -1,0 +1,32 @@
+.wrapper {
+  margin-left: 1em;
+  margin-right: 1em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 1em;
+  grid-column-gap: 1em;
+  width: 100%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.wrapper img {
+  width: 6.5rem;
+  height: 7rem;
+  margin: 1rem;
+}
+
+.wrapper h6 {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.playerModel {
+  background-color: rgba(0, 128, 0, 0.205);
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+/*# sourceMappingURL=players.component.css.map */

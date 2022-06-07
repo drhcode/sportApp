@@ -12,7 +12,15 @@ import { NavbarComponent } from './core/navbar/navbar.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { TeamplayersPipe } from './shared/pipes/teamplayers.pipe';
 import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // import { BestPlayer } from './shared/pipes/best-player.pipe';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatTableModule } from '@angular/material/table';
+import { MatSelectModule } from '@angular/material/select';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { PlayersComponent } from './section/teams/players/players/players.component';
+import { SearchPipePipe } from './shared/pipes/search-pipe.pipe';
 
 @NgModule({
   declarations: [
@@ -24,6 +32,8 @@ import { HttpClientModule } from '@angular/common/http';
     NewsComponent,
     NavbarComponent,
     TeamplayersPipe,
+    PlayersComponent,
+    SearchPipePipe,
   ],
   imports: [
     BrowserModule,
@@ -31,6 +41,13 @@ import { HttpClientModule } from '@angular/common/http';
     NgbModule,
     HttpClientModule,
     FontAwesomeModule,
+    BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatButtonModule,
+    MatInputModule,
+    MatTableModule,
+    MatSelectModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

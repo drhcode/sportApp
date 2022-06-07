@@ -1,1 +1,23 @@
-/* No CSS *//*# sourceMappingURL=results.component.css.map */
+.results {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #b9ffb9;
+  padding: 1.5rem;
+  width: 50rem;
+  border-radius: 1rem;
+  margin: 0.5rem;
+}
+
+.results img {
+  width: 30px;
+  height: 30px;
+}
+/*# sourceMappingURL=results.component.css.map */

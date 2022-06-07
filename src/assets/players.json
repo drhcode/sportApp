@@ -3,96 +3,120 @@
     "playerID": 1003,
     "firstName": "Hector",
     "lastName": "Bellerin",
+    "age": 22,
     "teamID": "Aston Villa FC",
     "position": "Defender",
-    "goals": 21
+    "goals": 21,
+    "logo": "assets/img/teams-logo/astonvilla.png"
   },
   {
     "playerID": 1101,
     "firstName": "Petr",
     "lastName": "Cech",
+    "age": 21,
     "teamID": "Aston Villa FC",
     "position": "Goalkeeper",
-    "goals": 28
+    "goals": 3,
+    "logo": "assets/img/teams-logo/astonvilla.png"
   },
   {
     "playerID": 1402,
     "firstName": "Olivier",
     "lastName": "Giroud",
+    "age": 24,
     "teamID": "West Ham United FC",
     "position": "Striker",
-    "goals": 24
+    "goals": 24,
+    "logo": "assets/img/teams-logo/westham.png"
   },
   {
     "playerID": 1027,
     "firstName": "Alex",
     "lastName": "Iwobi",
+    "age": 20,
     "teamID": "West Ham United FC",
     "position": "Midfielder 2",
-    "goals": 35
+    "goals": 35,
+    "logo": "assets/img/teams-logo/westham.png"
   },
   {
     "playerID": 1009,
     "firstName": "Laurent",
     "lastName": "Koscielny",
+    "age": 30,
     "teamID": "Stoke City FC",
     "position": "Defender",
-    "goals": 39
+    "goals": 39,
+    "logo": "assets/img/teams-logo/stoke.png"
   },
   {
     "playerID": 1033,
     "firstName": "Mesut",
     "lastName": "Ozil",
+    "age": 25,
     "teamID": "Stoke City FC",
     "position": "Midfielder 1",
-    "goals": 31
+    "goals": 31,
+    "logo": "assets/img/teams-logo/stoke.png"
   },
   {
     "playerID": 1048,
     "firstName": "Alexis",
     "lastName": "Sunderland FC",
+    "age": 27,
     "teamID": "Everton FC",
     "position": "Striker",
-    "goals": 22
+    "goals": 22,
+    "logo": "assets/img/teams-logo/sunderland.png"
   },
   {
     "playerID": 1041,
     "firstName": "Theo",
     "lastName": "Walcott",
+    "age": 21,
     "teamID": "Sunderland FC",
     "position": "Midfielder 2",
-    "goals": 31
+    "goals": 31,
+    "logo": "assets/img/teams-logo/sunderland.png"
   },
   {
     "playerID": 1404,
     "firstName": "Marcos",
     "lastName": "Alonso",
+    "age": 21,
     "teamID": "Everton FC",
     "position": "Defender",
-    "goals": 21
+    "goals": 19,
+    "logo": "assets/img/teams-logo/everton.png"
   },
   {
     "playerID": 1201,
     "firstName": "Cesar",
     "lastName": "Azpilicueta",
+    "age": 21,
     "teamID": "Everton FC",
     "position": "Defender",
-    "goals": 24
+    "goals": 24,
+    "logo": "assets/img/teams-logo/everton.png"
   },
   {
     "playerID": 1304,
     "firstName": "Gary",
     "lastName": "Cahill",
-    "team": "Manchester City FC",
+    "age": 21,
+    "teamID": "Manchester City FC",
     "position": "Defender",
-    "goals": 21
+    "goals": 22,
+    "logo": "assets/img/teams-logo/manchester.png"
   },
   {
     "playerID": 1043,
     "firstName": "Diego",
     "lastName": "Costa",
+    "age": 24,
     "teamID": "Manchester City FC",
     "position": "Striker",
-    "goals": 56
+    "goals": 56,
+    "logo": "assets/img/teams-logo/manchester.png"
   }
 ]
