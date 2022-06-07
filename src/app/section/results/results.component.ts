@@ -9,7 +9,6 @@ interface matchData {
   team2goals: Number;
   team2logo: String;
   team1logo: String;
-  stokecitygolas: Number;
 }
 
 @Component({

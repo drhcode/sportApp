@@ -32,6 +32,7 @@ interface matchData {
   stokecitygolas: Number;
   date: String;
   location: String;
+  time: String;
 }
 
 @Component({

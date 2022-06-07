@@ -13,7 +13,7 @@
   background-repeat: no-repeat;
   background-position: left bottom;
   background-size: cover;
-  padding: 80px;
+  padding: 100px;
 }
 
 .col-8 {
@@ -80,7 +80,11 @@
   background-color: #e2ebf2;
   border-radius: 10px;
   padding-left: 1rem;
-  height: 750px;
+  height: 780px;
+  width: 200px;
+  h6 {
+    font-size: 12px;
+  }
   h1 {
     font-size: 1.2rem;
   }
@@ -88,11 +92,11 @@
 
 .teams a {
   text-decoration: none;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
 }
 
 .team-list h6 {
-  font-size: 0.4rem;
+  font-size: 1rem;
 }
 .teams-list a {
   color: green;
@@ -102,7 +106,6 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 0.5rem;
 }
 
 .live-icons img {
@@ -155,6 +158,9 @@
 .filtered-matches {
   position: relative;
   width: 680px;
+  h6 {
+    font-size: 0.8rem;
+  }
 }
 
 .filtered-matches-1 {

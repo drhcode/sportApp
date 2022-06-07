@@ -1,5 +1,7 @@
-<div class="container">
+<div class="jumbotron text-center">
   <h1>{{ pageTitle }}</h1>
+</div>
+<div class="container">
   <div class="results" *ngFor="let result of matches">
     <img src="{{ result.team1logo }}" />
     <h6>{{ result.team1 }}</h6>

@@ -7,6 +7,7 @@
     "team2goals": 1,
     "team2logo": "assets/img/teams-logo/realmadrid.png",
     "date": "2022-08-10",
+    "time": "21:30",
     "location": "London"
   },
   {
@@ -17,6 +18,7 @@
     "team2goals": 1,
     "team2logo": "assets/img/teams-logo/stoke.png",
     "date": "2022-08-10",
+    "time": "17:30",
     "location": "Lisbon"
   },
   {
@@ -27,6 +29,7 @@
     "team2goals": 3,
     "team2logo": "assets/img/teams-logo/westham.png",
     "date": "2022-05-10",
+    "time": "15:30",
     "location": "London"
   },
   {
@@ -34,29 +37,32 @@
     "team1logo": "assets/img/teams-logo/stoke.png",
     "team1goals": 2,
     "team2": "Stoke City",
-    "team2goals": 1,
+    "team2goals": 0,
     "team2logo": "assets/img/teams-logo/sunderland.png",
     "date": "2022-05-10",
+    "time": "13:30",
     "location": "Lisbon"
   },
   {
     "team1": "Manchester City",
     "team1logo": "assets/img/teams-logo/everton.png",
-    "team1goals": 2,
+    "team1goals": 0,
     "team2": "Stoke City",
     "team2goals": 1,
     "team2logo": "assets/img/teams-logo/westham.png",
     "date": "2022-05-10",
+    "time": "20:30",
     "location": "London"
   },
   {
     "team1": "Sunderland",
     "team1logo": "assets/img/teams-logo/sunderland.png",
-    "team1goals": 2,
+    "team1goals": 1,
     "team2": "Stoke City FC",
     "team2goals": 1,
     "team2logo": "assets/img/teams-logo/stoke.png",
     "date": "2021-11-10",
+    "time": "19:30",
     "location": "London"
   },
   {
@@ -64,9 +70,10 @@
     "team1logo": "assets/img/teams-logo/astonvilla.png",
     "team1goals": 2,
     "team2": "Real Madrid",
-    "team2goals": 1,
+    "team2goals": 3,
     "team2logo": "assets/img/teams-logo/realmadrid.png",
     "date": "2021-11-10",
+    "time": "17:30",
     "location": "Lisbon"
   },
   {
@@ -74,9 +81,10 @@
     "team1logo": "assets/img/teams-logo/manchester.png",
     "team1goals": 2,
     "team2": "Sunderland",
-    "team2goals": 1,
+    "team2goals": 2,
     "team2logo": "assets/img/teams-logo/sunderland.png",
     "date": "2021-11-10",
+    "time": "18:30",
     "location": "Lisbon"
   }
 ]

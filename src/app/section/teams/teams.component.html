@@ -1,8 +1,12 @@
+<div class="jumbotron">
+  <h1>Teams</h1>
+</div>
+
 <div class="container p-4">
-  <div class="col-sm" *ngFor="let team of teams">
+  <div class="col" *ngFor="let team of teams">
     <p>Team Name: {{ team.name }}</p>
     <img src="{{ team.logo }}" alt="" />
-    <h1>Info</h1>
+    <h1>Info:</h1>
     <p>{{ team.description }}</p>
     <h1>Players</h1>
     <li>{{ team.players }}</li>

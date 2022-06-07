@@ -21,6 +21,9 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { PlayersComponent } from './section/teams/players/players/players.component';
 import { SearchPipePipe } from './shared/pipes/search-pipe.pipe';
+import { HeaderComponent } from './core/header/header.component';
+import { MatDialog, MatDialogModule } from '@angular/material/dialog';
+import { PlayermodalComponent } from './playermodal/playermodal.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +37,8 @@ import { SearchPipePipe } from './shared/pipes/search-pipe.pipe';
     TeamplayersPipe,
     PlayersComponent,
     SearchPipePipe,
+    HeaderComponent,
+    PlayermodalComponent,
   ],
   imports: [
     BrowserModule,
@@ -48,6 +53,7 @@ import { SearchPipePipe } from './shared/pipes/search-pipe.pipe';
     MatInputModule,
     MatTableModule,
     MatSelectModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

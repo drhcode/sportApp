@@ -18,7 +18,11 @@
       </li>
     </ul>
     <form class="rounded">
-      <input type="search" placeholder="Search Matches, Players, Teams" />
+      <input
+        type="search"
+        [(ngModel)]="search"
+        placeholder="Search Matches, Players, Teams"
+      />
       <button type="submit">Search</button>
     </form>
 

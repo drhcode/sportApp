@@ -2,14 +2,21 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: rgb(185, 255, 185);
+  align-items: center;
+  background-color: rgba(0, 128, 0, 0.205);
+
   padding: 1.5rem;
   width: 50rem;
   border-radius: 1rem;
   margin: 0.5rem;
+  font-size: 1.5rem;
+
+  h6 {
+    font-size: 1.2rem;
+  }
 
   img {
-    width: 30px;
-    height: 30px;
+    width: 4rem;
+    height: 4.2rem;
   }
 }

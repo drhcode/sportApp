@@ -9,15 +9,23 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #b9ffb9;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 128, 0, 0.205);
   padding: 1.5rem;
   width: 50rem;
   border-radius: 1rem;
   margin: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.results h6 {
+  font-size: 1.2rem;
 }
 
 .results img {
-  width: 30px;
-  height: 30px;
+  width: 4rem;
+  height: 4.2rem;
 }
 /*# sourceMappingURL=results.component.css.map */
