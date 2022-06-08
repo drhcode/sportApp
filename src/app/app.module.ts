@@ -21,9 +21,10 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { PlayersComponent } from './section/teams/players/players/players.component';
 import { SearchPipePipe } from './shared/pipes/search-pipe.pipe';
-import { HeaderComponent } from './core/header/header.component';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { PlayermodalComponent } from './playermodal/playermodal.component';
+import { HeaderComponent } from './core/header/header.component';
+import { StatisticsComponent } from './section/statistics/statistics.component';
 
 @NgModule({
   declarations: [
@@ -37,8 +38,9 @@ import { PlayermodalComponent } from './playermodal/playermodal.component';
     TeamplayersPipe,
     PlayersComponent,
     SearchPipePipe,
-    HeaderComponent,
     PlayermodalComponent,
+    HeaderComponent,
+    StatisticsComponent,
   ],
   imports: [
     BrowserModule,

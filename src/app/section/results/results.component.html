@@ -1,6 +1,7 @@
-<div class="jumbotron text-center">
-  <h1>{{ pageTitle }}</h1>
-</div>
+<app-header>
+  <span title>Results</span>
+  <span description>Check our lastest results</span>
+</app-header>
 <div class="container">
   <div class="results" *ngFor="let result of matches">
     <img src="{{ result.team1logo }}" />

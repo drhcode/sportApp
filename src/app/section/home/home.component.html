@@ -20,9 +20,9 @@
             <div class="teams-list live-icons" *ngFor="let team of homeTeams">
               <img src="{{ team.logo }}" />
               <h6>{{ team.name }}</h6>
-              &nbsp;&nbsp;
-              <a href="#"
-                >See profile &nbsp;<i class="fa-solid fa-arrow-right"> </i
+
+              <a href="/players"
+                >Profile &nbsp;<i class="fa-solid fa-arrow-right"> </i
               ></a>
             </div>
           </div>
@@ -37,7 +37,7 @@
               <img src="{{ player.logo }}" />
               <h6>{{ player.firstName }} {{ player.lastName }}</h6>
               &nbsp;&nbsp;
-              <a href="#"
+              <a href="/players"
                 >{{ player.goals }} &nbsp;<i
                   class="fa-solid fa-chart-column"
                 ></i
@@ -93,9 +93,7 @@
             >
           </div>
           <div class="d-flex justify-content-center">
-            <button type="button" class="btn btn-outline-info">
-              View Profile
-            </button>
+            <a class="btn btn-outline-info" href="/players"> View Profile</a>
           </div>
         </div>
       </div>
@@ -116,17 +114,13 @@
 
     <div class="col-md-auto">
       <div class="filter-data">
-        <select name="football" id="competitons">
-          <option value="football">Football</option>
-          <option value="basketball">Basketball</option>
-        </select>
         <select name="results" id="results">
           <option value="2021">2021</option>
           <option value="2022">2022</option>
         </select>
         <select name="location" id="location">
-          <option value="London" onClick="filterLocation()">London</option>
-          <option value="Bayern">Lisbon</option>
+          <option value="Lisbon">Lisbon</option>
+          <option value="London">London</option>
         </select>
       </div>
     </div>
@@ -149,7 +143,8 @@
       <h6>{{ info.team2 }}</h6>
       <img src="{{ info.team2logo }}" />
       <i class="fa-solid fa-clock"></i> {{ info.date }} - {{ info.time }} &nbsp;
-      &nbsp; <i class="fa-solid fa-map-marker"></i> {{ info.location }}
+      &nbsp; <i class="fa-solid fa-map-marker"></i>
+      {{ info.location }}
       <i class="fa fa-heart" style="font-size: 25px"></i>
       <a href="#"
         >View Details &nbsp;<i class="fa-solid fa-arrow-right"> </i
@@ -160,7 +155,7 @@
   <!-- create game section -->
   <div class="col-4">
     <div class="create-game">
-      <h5>Create Game</h5>
+      <h1>Create Game</h1>
       <form>
         <div class="form-group mb-2">
           <input
@@ -181,18 +176,19 @@
           />
         </div>
         <div class="form-group mb-2">
-          <input
-            type="time"
-            class="form-control"
-            id="time"
-            placeholder="Select Ground"
-          />
-        </div>
-        <div class="form-group mb-2">
           <input type="date" class="form-control" id="dateofgame" />
         </div>
+        <div class="form-group mb-2">
+          <input type="time" class="form-control" id="time" />
+        </div>
+        <div class="form-group mb-2">
+          <select class="form-control" id="exampleSelect">
+            <option>Lisbon</option>
+            <option>London</option>
+          </select>
+        </div>
 
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">Create</button>
       </form>
     </div>
   </div>

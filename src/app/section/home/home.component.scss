@@ -25,6 +25,7 @@
     rgba(0, 88, 2, 1) 99%
   );
   border-radius: 1rem;
+  margin: 0.5rem;
 }
 
 .info {
@@ -90,6 +91,9 @@
   }
 }
 
+.team-list {
+  background-color: #e2ebf2;
+}
 .teams a {
   text-decoration: none;
   font-size: 0.6rem;
@@ -177,4 +181,33 @@
 .create-game select {
   margin-left: 5px;
   padding: 5px;
+}
+
+//Queries
+@media (max-width: 1240px) {
+  html {
+    font-size: min(3vw, 10px);
+  }
+
+  .home-img {
+    padding: 40px;
+  }
+  .lives {
+    width: 800px;
+  }
+  .live-matches {
+    height: 780px;
+    width: 10px;
+  }
+
+  .filtered-matches {
+    position: relative;
+    width: 550px;
+    h6 {
+      font-size: 0.8rem;
+    }
+  }
+  .trending-section {
+    width: 50px;
+  }
 }

@@ -4,12 +4,9 @@
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.container {
-  display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: repeat(4, 1fr);
-  grid-row-gap: 1em;
-  grid-column-gap: 1em;
+.lives {
+  height: 300px;
+  width: 1400px;
 }
 
 .home-img {
@@ -17,7 +14,7 @@
   background-repeat: no-repeat;
   background-position: left bottom;
   background-size: cover;
-  padding: 80px;
+  padding: 100px;
 }
 
 .col-8 {
@@ -32,13 +29,19 @@
   );
   background: linear-gradient(90deg, #015c18 0%, #008b07 45%, #005802 99%);
   border-radius: 1rem;
+  margin: 0.5rem;
 }
 
 .info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   margin-left: 20rem;
   color: #fff;
@@ -219,12 +222,4 @@
 .create-game select {
   margin-left: 5px;
   padding: 5px;
-}
-/*# sourceMappingURL=home.component.css.map */
-
-// Queries
-@media (max-width: 950px) {
-  .filtered-matches {
-    width: 480px;
-  }
 }

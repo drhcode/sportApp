@@ -2,38 +2,7 @@ import { Component } from '@angular/core';
 import homeTeamsData from 'src/assets/teams.json';
 import BestPlayers from 'src/assets/players.json';
 import matchesData from 'src/assets/matches.json';
-
-interface homeTeams {
-  team_id: String;
-  name: String;
-  country: String;
-  description: String;
-  logo: String;
-}
-
-interface Players {
-  player_id: Number;
-  firstName: String;
-  lastName: String;
-  teamID: String;
-  position: String;
-  goals: Number;
-  logo: String;
-}
-
-interface matchData {
-  team1: String;
-  logo: String;
-  team2: String;
-  team1goals: Number;
-  team2goals: Number;
-  team2logo: String;
-  team1logo: String;
-  stokecitygolas: Number;
-  date: String;
-  location: String;
-  time: String;
-}
+import { FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-home',
@@ -42,6 +11,7 @@ interface matchData {
 })
 export class HomeComponent {
   homePhoto: string = 'assets/img/home.jpg';
+  formBuilder: any;
 
   // Filter best players
   findBestPlayer(Players: any[]): any[] {
@@ -57,16 +27,29 @@ export class HomeComponent {
     return Matches.filter((e) => e.location === 'Lisbon');
   }
 
+  // This filter matches in 2 location
   filterMatches(Matches: any[]): any[] {
     return Matches.filter(
       (e) => e.location === 'London' && e.location === 'Lisbon'
     );
   }
 
+  // this filter matches only for lisbon
   filterLocation(Matches: any[]): any[] {
     return Matches.filter((e) => e.location === 'Lisbon');
   }
 
+  // this will create new game in homepage
+  private createGame(): FormGroup {
+    return this.formBuilder.group({
+      team1: ['', Validators.required],
+      team2: ['', Validators.required],
+      time: ['', Validators.required],
+      dateofgame: ['', Validators.required],
+    });
+  }
+
+  gameForm: any = FormGroup;
   homeTeams = homeTeamsData;
   Players = BestPlayers;
   Matches = matchesData;

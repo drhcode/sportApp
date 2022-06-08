@@ -7,7 +7,7 @@
     "teamID": "Aston Villa FC",
     "position": "Defender",
     "goals": 21,
-    "logo": "assets/img/teams-logo/astonvilla.png"
+    "logo": "assets/img/players/1.png"
   },
   {
     "playerID": 1101,
@@ -17,7 +17,7 @@
     "teamID": "Aston Villa FC",
     "position": "Goalkeeper",
     "goals": 3,
-    "logo": "assets/img/teams-logo/astonvilla.png"
+    "logo": "assets/img/players/2.png"
   },
   {
     "playerID": 1402,
@@ -27,7 +27,7 @@
     "teamID": "West Ham United FC",
     "position": "Striker",
     "goals": 24,
-    "logo": "assets/img/teams-logo/westham.png"
+    "logo": "assets/img/players/3.webp"
   },
   {
     "playerID": 1027,
@@ -37,7 +37,7 @@
     "teamID": "West Ham United FC",
     "position": "Midfielder 2",
     "goals": 35,
-    "logo": "assets/img/teams-logo/westham.png"
+    "logo": "assets/img/players/4.png"
   },
   {
     "playerID": 1009,
@@ -47,7 +47,7 @@
     "teamID": "Stoke City FC",
     "position": "Defender",
     "goals": 39,
-    "logo": "assets/img/teams-logo/stoke.png"
+    "logo": "assets/img/players/5.webp"
   },
   {
     "playerID": 1033,
@@ -57,7 +57,7 @@
     "teamID": "Stoke City FC",
     "position": "Midfielder 1",
     "goals": 31,
-    "logo": "assets/img/teams-logo/stoke.png"
+    "logo": "assets/img/players/6.png"
   },
   {
     "playerID": 1048,
@@ -67,7 +67,7 @@
     "teamID": "Everton FC",
     "position": "Striker",
     "goals": 22,
-    "logo": "assets/img/teams-logo/sunderland.png"
+    "logo": "assets/img/players/7.png"
   },
   {
     "playerID": 1041,
@@ -77,7 +77,7 @@
     "teamID": "Sunderland FC",
     "position": "Midfielder 2",
     "goals": 31,
-    "logo": "assets/img/teams-logo/sunderland.png"
+    "logo": "assets/img/players/8.jpg"
   },
   {
     "playerID": 1404,
@@ -87,7 +87,7 @@
     "teamID": "Everton FC",
     "position": "Defender",
     "goals": 19,
-    "logo": "assets/img/teams-logo/everton.png"
+    "logo": "assets/img/players/9.png"
   },
   {
     "playerID": 1201,
@@ -97,7 +97,7 @@
     "teamID": "Everton FC",
     "position": "Defender",
     "goals": 24,
-    "logo": "assets/img/teams-logo/everton.png"
+    "logo": "assets/img/players/10.png"
   },
   {
     "playerID": 1304,
@@ -107,7 +107,7 @@
     "teamID": "Manchester City FC",
     "position": "Defender",
     "goals": 22,
-    "logo": "assets/img/teams-logo/manchester.png"
+    "logo": "assets/img/players/11.png"
   },
   {
     "playerID": 1043,
@@ -117,6 +117,6 @@
     "teamID": "Manchester City FC",
     "position": "Striker",
     "goals": 56,
-    "logo": "assets/img/teams-logo/manchester.png"
+    "logo": "assets/img/players/12.png"
   }
 ]

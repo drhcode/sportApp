@@ -1,1 +1,10 @@
-<h1 *ngIf="isAdvancedRoute()"></h1>
+<div class="jumbotron jumbotron-fluid p-3 my-2">
+  <div class="container">
+    <h1 class="display-4">
+      <ng-content select="[title]"></ng-content>
+    </h1>
+    <p class="lead">
+      <ng-content select="[description]"> </ng-content>
+    </p>
+  </div>
+</div>
