@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import teamsData from 'src/assets/teams.json';
+import players from 'src/assets/players.json';
 
 @Component({
   selector: 'app-teams',
@@ -8,4 +9,5 @@ import teamsData from 'src/assets/teams.json';
 })
 export class TeamsComponent {
   teams = teamsData;
+  playersInfo = players;
 }
