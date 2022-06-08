@@ -173,9 +173,10 @@
 }
 
 .best-player img {
-  width: 4rem;
-  height: 4rem;
-  margin: 1.2rem;
+  height: 6.5rem;
+  width: 6.5rem;
+  border-radius: 50%;
+  border: 3px solid #e2ebf2;
 }
 
 .best-player i {
