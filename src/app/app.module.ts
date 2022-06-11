@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ExampleComponent } from './example/example.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomeComponent } from './section/home/home.component';
 import { TeamsComponent } from './section/teams/teams.component';
@@ -25,11 +24,11 @@ import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { PlayermodalComponent } from './playermodal/playermodal.component';
 import { HeaderComponent } from './core/header/header.component';
 import { StatisticsComponent } from './section/statistics/statistics.component';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ExampleComponent,
     HomeComponent,
     TeamsComponent,
     ResultsComponent,
@@ -56,6 +55,7 @@ import { StatisticsComponent } from './section/statistics/statistics.component';
     MatTableModule,
     MatSelectModule,
     MatDialogModule,
+    Ng2SearchPipeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

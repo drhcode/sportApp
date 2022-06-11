@@ -3,6 +3,7 @@ import homeTeamsData from 'src/assets/teams.json';
 import BestPlayers from 'src/assets/players.json';
 import matchesData from 'src/assets/matches.json';
 import { FormGroup, Validators } from '@angular/forms';
+import { MatchService } from 'src/app/services/match.service';
 
 @Component({
   selector: 'app-home',
@@ -10,8 +11,13 @@ import { FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent {
-  homePhoto: string = 'assets/img/home.jpg';
+  filters = {
+    year: '',
+    location: '',
+  };
   formBuilder: any;
+
+  constructor(private matchService: MatchService) {}
 
   // Filter best players
   findBestPlayer(Players: any[]): any[] {
@@ -24,19 +30,13 @@ export class HomeComponent {
   }
   // Sort latest matches in homepage
   latestMatches(Matches: any[]): any[] {
-    return Matches.filter((e) => e.location === 'Lisbon');
-  }
-
-  // This filter matches in 2 location
-  filterMatches(Matches: any[]): any[] {
-    return Matches.filter(
-      (e) => e.location === 'London' && e.location === 'Lisbon'
-    );
+    console.log(this.filters);
+    return this.matchService.latest(this.filters);
   }
 
   // this filter matches only for lisbon
   filterLocation(Matches: any[]): any[] {
-    return Matches.filter((e) => e.location === 'Lisbon');
+    return Matches.filter((e) => e.location === 'London');
   }
 
   // this will create new game in homepage

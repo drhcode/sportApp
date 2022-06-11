@@ -21,14 +21,17 @@
       </li>
     </ul>
     <form>
-      <input
-        type="search"
-        [(ngModel)]="search"
-        (keyup)="onChange()"
-        placeholder="Search Matches, Players, Teams"
-      />
-
-      <button type="submit">Search</button>
+      <div class="search">
+        <input
+          onkeyup="onChange()"
+          class="form-control"
+          type="text"
+          name="search"
+          [(ngModel)]="search"
+          autocomplete="on"
+          placeholder=" SEARCH"
+        />
+      </div>
     </form>
 
     <div class="nav-link dropdown-toggle justify-content-between" href="">

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import homeTeamsData from 'src/assets/teams.json';
-import BestPlayers from 'src/assets/players.json';
+import AllPlayers from 'src/assets/players.json';
 import matchesData from 'src/assets/matches.json';
 
 @Component({
@@ -13,6 +13,7 @@ export class NavbarComponent {
   search: any;
   matches = matchesData;
   teams = homeTeamsData;
+  players = AllPlayers;
   filterData: any = [];
 
   ngOnInit() {
@@ -21,9 +22,9 @@ export class NavbarComponent {
 
   onChange() {
     this.filterData = this.matches.filter(
-      (datum) =>
-        datum.team1.indexOf(this.search) > -1 ||
-        datum.team2.indexOf(this.search) > -1
+      (data) =>
+        data.team1.indexOf(this.search) > -1 ||
+        data.team2.indexOf(this.search) > -1
     );
     console.log(this.filterData);
   }

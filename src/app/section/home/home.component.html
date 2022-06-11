@@ -10,7 +10,7 @@
             <a href="#"><i class="fa-solid fa-arrow-right"> </i></a>
           </h4>
 
-          <div class="live-icons justify-content-around">
+          <div class="live-icons justify-content-between">
             <img src="assets/img/teams-logo/manchester.png" />
             <h6>3 : 2</h6>
             <img src="assets/img/teams-logo/realmadrid.png" />
@@ -38,9 +38,7 @@
               <h6>{{ player.firstName }} {{ player.lastName }}</h6>
               &nbsp;&nbsp;
               <a href="/players"
-                >{{ player.goals }} &nbsp;<i
-                  class="fa-solid fa-chart-column"
-                ></i
+                >{{ player.goals }} &nbsp;<i class="fa-solid fa-futbol"></i
               ></a>
             </div>
           </div>
@@ -48,7 +46,7 @@
       </div>
     </div>
 
-    <!-- **** Main Div***-->
+    <!-- **** Main Section***-->
     <div class="col-8">
       <div class="home-img">
         <div class="info">
@@ -102,23 +100,22 @@
 </div>
 
 <!-- Latest Matches, Filter, View All  -->
-<div class="container pt-4">
+<div class="container pt-2">
   <div class="row justify-content-md-center">
-    <div class="col col-lg-2">
-      <div class="latest-matches">
-        <h5>Latest Matches</h5>
-      </div>
+    <div class="col col-lg-2 mt-2">
+      <h5>Latest Matches</h5>
     </div>
 
     <!-- ******* Filtered matches controller ******-->
-
     <div class="col-md-auto">
       <div class="filter-data">
-        <select name="results" id="results">
+        <select name="results" id="results" [(ngModel)]="filters.year">
+          <option value="">All</option>
           <option value="2021">2021</option>
           <option value="2022">2022</option>
         </select>
-        <select name="location" id="location">
+        <select name="location" id="location" [(ngModel)]="filters.location">
+          <option value="">All</option>
           <option value="Lisbon">Lisbon</option>
           <option value="London">London</option>
         </select>
@@ -137,13 +134,14 @@
       class="col filtered-matches-1 justify-content-between live-icons"
       *ngFor="let info of latestMatches(Matches)"
     >
+      <small> {{ info.id }}</small>
       <img src="{{ info.team1logo }}" />
-      <h6>{{ info.team1 }}</h6>
+      <div>{{ info.team1 }}</div>
       <small> VS </small>
       <h6>{{ info.team2 }}</h6>
       <img src="{{ info.team2logo }}" />
-      <i class="fa-solid fa-clock"></i> {{ info.date }} - {{ info.time }} &nbsp;
-      &nbsp; <i class="fa-solid fa-map-marker"></i>
+      <i class="fa-solid fa-clock"></i> {{ info.dateofmatch }} -
+      {{ info.time }} &nbsp; &nbsp; <i class="fa-solid fa-map-marker"></i>
       {{ info.location }}
       <i class="fa fa-heart" style="font-size: 25px"></i>
       <a href="#"
