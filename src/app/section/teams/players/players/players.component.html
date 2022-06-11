@@ -1,0 +1,17 @@
+<app-header>
+  <span title>Players</span>
+  <span description>Players info</span>
+</app-header>
+<div class="wrapper">
+  <ng-container *ngFor="let e of playerData; let i = index">
+    <div class="playerModel">
+      <h1>Team: {{ e.teamID }}</h1>
+      <img src=" {{ e.logo }}" />
+      <h1>{{ e.firstName }} {{ e.lastName }}</h1>
+      <h6>Age: {{ e.age }}</h6>
+      <h6>Position: {{ e.position }}</h6>
+      <h6>Goals: {{ e.goals }}</h6>
+      <button type="button" class="btn btn-info">More Info</button>
+    </div>
+  </ng-container>
+</div>

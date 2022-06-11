@@ -4,7 +4,8 @@
     "team_id": "01",
     "country": "England",
     "description": "Aston Villa Football Club is a professional football club based in Aston, Birmingham, England. The club competes in the Premier League, the top tier of the English football league system. Founded in 1874, they have played at their home ground, Villa Park, since 1897. Aston Villa were one of the founder members of the Football League in 1888 and of the Premier League in 1992.[3] Villa are one of the five English clubs to have won the European Cup, in 1981–82. They have also won the Football League First Division seven times, the FA Cup seven times, the League Cup five times, and the European (UEFA) Super Cup once. The club are currently ranked 5th in the all-time English top flight table, since its creation in 1888.[4] Villa have a fierce local rivalry with Birmingham City and the Second City derby between the teams has been played since 1879.[5] The club's traditional kit colours are claret shirts with sky blue sleeves, white shorts and sky blue socks. Their traditional club badge is of a rampant lion.[6][7] The club is currently owned by the NSWE group, a company owned by the Egyptian billionaire Nassef Sawiris and the American billionaire Wes Edens.",
-    "logo": "assets/img/teams-logo/astonvilla.png"
+    "logo": "assets/img/teams-logo/astonvilla.png",
+    "players": "Hektor, Daniel"
   },
   {
     "name": "West Ham United FC",
@@ -18,7 +19,7 @@
     "team_id": "03",
     "country": "England",
     "description": "Stoke City Football Club is an English professional football club based in Stoke-on-Trent, Staffordshire. Founded as Stoke Ramblers in 1863, it changed its name to Stoke Football Club in 1878 and then to Stoke City in 1925 after Stoke-on-Trent was granted city status. It was one of the twelve founding members of the Football League in 1888.[5] It competes in the Championship, the second tier of English football. They won their first and only major trophy to date, the League Cup, in 1972, when they beat Chelsea 2–1. Their highest league finish in the top division is fourth, in the 1935–36 and 1946–47 seasons. They played in the FA Cup Final in 2011, finishing runners-up to Manchester City; and reached FA Cup semi-finals in 1899, 1971 and 1972. They competed in European football in 1972–73, 1974–75 and 2011–12. They won the Football League Trophy in 1992 and in 2000.",
-    "logo": "assets/img/teams-logo/stokecity.png"
+    "logo": "assets/img/teams-logo/stoke.png"
   },
   {
     "name": "Sunderland AFC",

@@ -6,6 +6,8 @@ import { SecondNewsComponent } from './section/news/second-news/second-news.comp
 import { SingleNewsComponent } from './section/news/single-news/single-news.component';
 import { ThirdNewsComponent } from './section/news/third-news/third-news.component';
 import { ResultsComponent } from './section/results/results.component';
+import { StatisticsComponent } from './section/statistics/statistics.component';
+import { PlayersComponent } from './section/teams/players/players/players.component';
 import { TeamsComponent } from './section/teams/teams.component';
 
 const routes: Routes = [
@@ -16,6 +18,8 @@ const routes: Routes = [
   { path: 'news/2', component: SecondNewsComponent },
   { path: 'news/3', component: ThirdNewsComponent },
   { path: 'results', component: ResultsComponent },
+  { path: 'players', component: PlayersComponent },
+  { path: 'statistics', component: StatisticsComponent },
 ];
 
 @NgModule({

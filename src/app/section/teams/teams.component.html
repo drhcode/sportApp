@@ -1,8 +1,20 @@
-<div class="container p-4" *ngFor="let team of teams">
-  <div class="col-sm">
-    <h6>{{ team.name }}</h6>
+<app-header>
+  <span title>Teams</span>
+  <span description>Teams details</span>
+</app-header>
+
+<div class="container p-4">
+  <div class="col" *ngFor="let team of teams">
+    <p>Team Name: {{ team.name }}</p>
     <img src="{{ team.logo }}" alt="" />
+    <h1>Info:</h1>
     <p>{{ team.description }}</p>
+    <h1>Players</h1>
+    <div>
+      <li>
+        {{ team.players }}
+      </li>
+    </div>
     <br />
     <button class="btn btn-info">More Info</button>
     <hr />

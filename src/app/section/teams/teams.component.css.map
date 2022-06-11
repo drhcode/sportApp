@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAAA,AAAA,IAAI,CAAC,GAAG,CAAC;EACP,MAAM,EAAE,MAAM;EACd,KAAK,EAAE,MAAM;EACb,aAAa,EAAE,GAAG;EAClB,MAAM,EAAE,iBAAiB;CAC1B",
     "sources": [
         "teams.component.scss"
     ],

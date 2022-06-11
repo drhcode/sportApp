@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <nav class="navbar navbar-expand-sm navbar-light bg-light border shadow rounded">
+=======
+<nav class="navbar navbar-expand navbar-light bg-light">
+>>>>>>> 98ecbd48615bdbcc44076deb4e655204e7a030af
   <div class="container">
     <ul class="navbar-nav">
       <li class="nav-item active navigation-items">
@@ -13,10 +17,30 @@
       <li class="nav-item navigation-items">
         <a class="nav-link" href="results">Results</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="players">Players</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="statistics">Statistics</a>
+      </li>
     </ul>
     <form>
+<<<<<<< HEAD
       <input type="search" placeholder="Search Matches, Players, Teams" />
       <button type="submit">Search</button>
+=======
+      <div class="search">
+        <input
+          onkeyup="onChange()"
+          class="form-control"
+          type="text"
+          name="search"
+          [(ngModel)]="search"
+          autocomplete="on"
+          placeholder=" SEARCH"
+        />
+      </div>
+>>>>>>> 98ecbd48615bdbcc44076deb4e655204e7a030af
     </form>
 
     <div class="nav-link justify-content-between d-flex flex-row" href="">
