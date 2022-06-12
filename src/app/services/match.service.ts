@@ -11,7 +11,6 @@ export class MatchService extends LocalStorageDataService {
 
   constructor() {
     super();
-
     this.key = MatchKey;
     // localStorage.setItem('matches', JSON.stringify(matchesData));
   }
@@ -20,7 +19,7 @@ export class MatchService extends LocalStorageDataService {
     return this.all().filter((m: any) => {
       return (
         (filters.year == '' ||
-          new Date(m.dateofmatch).getFullYear() == filters.year) &&
+          new Date(m.dateOfMatch).getFullYear() == filters.year) &&
         (filters.location == '' || m.location == filters.location)
       );
     });

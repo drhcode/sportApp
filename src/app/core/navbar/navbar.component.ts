@@ -19,13 +19,4 @@ export class NavbarComponent {
   ngOnInit() {
     this.filterData = [...this.matches, ...this.teams];
   }
-
-  onChange() {
-    this.filterData = this.matches.filter(
-      (data) =>
-        data.team1.indexOf(this.search) > -1 ||
-        data.team2.indexOf(this.search) > -1
-    );
-    console.log(this.filterData);
-  }
 }

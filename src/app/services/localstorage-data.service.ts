@@ -17,4 +17,10 @@ export class LocalStorageDataService {
     items.push(item);
     localStorage.setItem(this.key, JSON.stringify(items));
   }
+
+  delete(item: any) {
+    let items = this.all();
+    items.pop(item);
+    localStorage.setItem(this.key, JSON.stringify(items));
+  }
 }

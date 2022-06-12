@@ -12,7 +12,6 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { TeamplayersPipe } from './shared/pipes/teamplayers.pipe';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-// import { BestPlayer } from './shared/pipes/best-player.pipe';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatTableModule } from '@angular/material/table';
 import { MatSelectModule } from '@angular/material/select';
@@ -24,7 +23,6 @@ import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { PlayermodalComponent } from './playermodal/playermodal.component';
 import { HeaderComponent } from './core/header/header.component';
 import { StatisticsComponent } from './section/statistics/statistics.component';
-import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 @NgModule({
   declarations: [
@@ -55,7 +53,6 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
     MatTableModule,
     MatSelectModule,
     MatDialogModule,
-    Ng2SearchPipeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
