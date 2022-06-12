@@ -10,21 +10,27 @@ import { MatchService } from 'src/app/services/match.service';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
   filters = {
     year: '',
     location: '',
   };
 
-  createGameForm = new FormGroup({
-    team1Name: new FormControl(''),
-    team2Name: new FormControl(''),
-    dateOfMatch: new FormControl(''),
-    timeOfMatch: new FormControl(''),
-    location: new FormControl(''),
-  });
+  createGameForm: FormGroup;
 
-  constructor(private matchService: MatchService) {}
+  constructor(private matchService: MatchService) {
+    this.createGameForm = new FormGroup({
+      team1Name: new FormControl(''),
+      team1logo: new FormControl(''),
+      team2Name: new FormControl(''),
+      team2logo: new FormControl(''),
+      dateOfMatch: new FormControl(''),
+      timeOfMatch: new FormControl(''),
+      location: new FormControl(''),
+    });
+  }
+
+  ngOnInit(): void {}
   gameForm: any = FormGroup;
   homeTeams = homeTeamsData;
   Players = BestPlayers;
