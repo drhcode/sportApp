@@ -23,6 +23,8 @@ import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { PlayermodalComponent } from './playermodal/playermodal.component';
 import { HeaderComponent } from './core/header/header.component';
 import { StatisticsComponent } from './section/statistics/statistics.component';
+import { SingleNewsComponent } from './section/news/single-news/single-news.component';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 @NgModule({
   declarations: [
@@ -32,6 +34,7 @@ import { StatisticsComponent } from './section/statistics/statistics.component';
     ResultsComponent,
     NewsComponent,
     NavbarComponent,
+    SingleNewsComponent,
     TeamplayersPipe,
     PlayersComponent,
     SearchPipePipe,
@@ -53,6 +56,7 @@ import { StatisticsComponent } from './section/statistics/statistics.component';
     MatTableModule,
     MatSelectModule,
     MatDialogModule,
+    Ng2SearchPipeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,7 +1,4 @@
 import { Component } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
-import { PlayermodalComponent } from './playermodal/playermodal.component';
-
 import homeTeamsData from 'src/assets/teams.json';
 import BestPlayers from 'src/assets/players.json';
 import matchesData from 'src/assets/matches.json';
