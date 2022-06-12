@@ -1,8 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import homeTeamsData from 'src/assets/teams.json';
 import BestPlayers from 'src/assets/players.json';
 import matchesData from 'src/assets/matches.json';
-import { FormGroup, Validators } from '@angular/forms';
+import { FormGroup, FormControl, FormBuilder } from '@angular/forms';
 import { MatchService } from 'src/app/services/match.service';
 
 @Component({
@@ -15,9 +15,20 @@ export class HomeComponent {
     year: '',
     location: '',
   };
-  formBuilder: any;
+
+  createGameForm = new FormGroup({
+    team1Name: new FormControl(''),
+    team2Name: new FormControl(''),
+    dateOfMatch: new FormControl(''),
+    timeOfMatch: new FormControl(''),
+    location: new FormControl(''),
+  });
 
   constructor(private matchService: MatchService) {}
+  gameForm: any = FormGroup;
+  homeTeams = homeTeamsData;
+  Players = BestPlayers;
+  Matches = matchesData;
 
   // Filter best players
   findBestPlayer(Players: any[]): any[] {
@@ -30,27 +41,14 @@ export class HomeComponent {
   }
   // Sort latest matches in homepage
   latestMatches(Matches: any[]): any[] {
-    console.log(this.filters);
     return this.matchService.latest(this.filters);
   }
-
-  // this filter matches only for lisbon
-  filterLocation(Matches: any[]): any[] {
-    return Matches.filter((e) => e.location === 'London');
+  onSubmit() {
+    console.log(this.createGameForm.value);
+    return this.matchService.create(this.createGameForm.value);
   }
 
-  // this will create new game in homepage
-  private createGame(): FormGroup {
-    return this.formBuilder.group({
-      team1: ['', Validators.required],
-      team2: ['', Validators.required],
-      time: ['', Validators.required],
-      dateofgame: ['', Validators.required],
-    });
+  deleteGame() {
+    return this.matchService.delete(this.createGameForm.value);
   }
-
-  gameForm: any = FormGroup;
-  homeTeams = homeTeamsData;
-  Players = BestPlayers;
-  Matches = matchesData;
 }

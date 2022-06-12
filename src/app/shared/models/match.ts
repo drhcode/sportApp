@@ -1,9 +1,9 @@
 export interface Match {
   id: number;
-  team1: string;
-  team2: string;
-  time: number;
-  dateofmatch: string;
+  team1Name: string;
+  team2Name: string;
+  timeOfMatch: number;
+  dateOfMatch: string;
   location: string;
 }
 

@@ -136,17 +136,24 @@
     >
       <small> {{ info.id }}</small>
       <img src="{{ info.team1logo }}" />
-      <div>{{ info.team1 }}</div>
+      <h6>{{ info.team1Name }}</h6>
       <small> VS </small>
-      <h6>{{ info.team2 }}</h6>
+      <h6>{{ info.team2Name }}</h6>
       <img src="{{ info.team2logo }}" />
-      <i class="fa-solid fa-clock"></i> {{ info.dateofmatch }} -
-      {{ info.time }} &nbsp; &nbsp; <i class="fa-solid fa-map-marker"></i>
+      <i class="fa-solid fa-clock"></i> {{ info.dateOfMatch }} -
+      {{ info.timeOfMatch }} &nbsp; &nbsp;
+      <i class="fa-solid fa-map-marker"></i>
       {{ info.location }}
       <i class="fa fa-heart" style="font-size: 25px"></i>
       <a href="#"
         >View Details &nbsp;<i class="fa-solid fa-arrow-right"> </i
       ></a>
+      <button (click)="deleteGame()">
+        <i
+          class="fa-regular fa-trash-can"
+          style="color: red; font-size: 25px"
+        ></i>
+      </button>
     </div>
   </div>
 
@@ -154,38 +161,61 @@
   <div class="col-4">
     <div class="create-game">
       <h1>Create Game</h1>
-      <form>
+      <form [formGroup]="createGameForm" (ngSubmit)="onSubmit()">
         <div class="form-group mb-2">
           <input
             type="text"
             class="form-control"
-            id="gametype"
+            formControlName="team1Name"
             placeholder="Team 1"
-            list="gametype"
+          />
+        </div>
+        <div class="form-group mb-2">
+          <label for="team1logo">Upload Logo:</label>
+          <input
+            type="file"
+            id="team1logo"
+            formControlName="team2logo"
+            class="form-control"
           />
         </div>
         <div class="form-group mb-2">
           <input
             type="text"
             class="form-control"
-            id="gametype"
+            formControlName="team2Name"
             placeholder="Team 2"
-            list="gametype"
           />
         </div>
         <div class="form-group mb-2">
-          <input type="date" class="form-control" id="dateofgame" />
+          <label for="team2logo">Upload Logo:</label>
+          <input
+            type="file"
+            id="team2logo"
+            formControlName="team2logo"
+            class="form-control"
+          />
         </div>
         <div class="form-group mb-2">
-          <input type="time" class="form-control" id="time" />
+          <input
+            type="date"
+            formControlName="dateOfMatch"
+            class="form-control"
+          />
         </div>
         <div class="form-group mb-2">
-          <select class="form-control" id="exampleSelect">
+          <input
+            type="time"
+            formControlName="timeOfMatch"
+            class="form-control"
+          />
+        </div>
+        <div class="form-group mb-2">
+          <select class="form-control" formControlName="location">
             <option>Lisbon</option>
             <option>London</option>
           </select>
         </div>
-
         <button type="submit" class="btn btn-primary">Create</button>
       </form>
     </div>

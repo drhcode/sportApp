@@ -5,11 +5,11 @@
 <div class="container">
   <div class="results" *ngFor="let result of matches">
     <img src="{{ result.team1logo }}" />
-    <h6>{{ result.team1 }}</h6>
+    <h6>{{ result.team1Name }}</h6>
     <h6>{{ result.team1goals }}</h6>
     <small> - </small>
     <h6>{{ result.team2goals }}</h6>
-    <h6>{{ result.team2 }}</h6>
+    <h6>{{ result.team2Name }}</h6>
     <img src="{{ result.team2logo }}" />
   </div>
 </div>

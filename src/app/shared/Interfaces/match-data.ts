@@ -1,13 +1,13 @@
 export interface MatchData {
-  team1: String;
+  team1Name: String;
   logo: String;
-  team2: String;
+  team2Name: String;
   team1goals: Number;
   team2goals: Number;
   team2logo: String;
   team1logo: String;
   stokecitygolas: Number;
-  date: String;
+  dateOfMatch: String;
   location: String;
-  time: String;
+  timeOfMatch: String;
 }
