@@ -1,0 +1,30 @@
+<app-header>
+  <span title>Statistics</span>
+  <span description>Some statistics about matches and players</span>
+</app-header>
+
+<div class="container">
+  <div>
+    <h1>The best matches</h1>
+  </div>
+  <div class="results" *ngFor="let result of bestMatch(matches)">
+    <img src="{{ result.team1logo }}" />
+    <h6>{{ result.team1 }}</h6>
+    <h6>{{ result.team1goals }}</h6>
+    <small> - </small>
+    <h6>{{ result.team2goals }}</h6>
+    <h6>{{ result.team2 }}</h6>
+    <img src="{{ result.team2logo }}" />
+  </div>
+  <hr />
+  <div>
+    <h1>The best players</h1>
+  </div>
+  <div class="results" *ngFor="let result of bestPlayers(playersData)">
+    <img src="{{ result.logo }}" />
+    <h6>{{ result.team1 }}</h6>
+    <h6>{{ result.firstName }} {{ result.lastName }} has scored about</h6>
+
+    <h6>{{ result.goals }} goals <i class="fa-regular fa-futbol"></i></h6>
+  </div>
+</div>

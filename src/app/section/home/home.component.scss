@@ -13,7 +13,7 @@
   background-repeat: no-repeat;
   background-position: left bottom;
   background-size: cover;
-  padding: 80px;
+  padding: 100px;
 }
 
 .col-8 {
@@ -25,6 +25,7 @@
     rgba(0, 88, 2, 1) 99%
   );
   border-radius: 1rem;
+  margin: 0.5rem;
 }
 
 .info {
@@ -57,7 +58,6 @@
 }
 .players {
   display: flex;
-  align-items: center;
   margin-top: 1rem;
   margin-left: 20rem;
   gap: 8.6rem;
@@ -80,19 +80,26 @@
   background-color: #e2ebf2;
   border-radius: 10px;
   padding-left: 1rem;
-  height: 750px;
+  height: 780px;
+  width: 200px;
+  h6 {
+    font-size: 12px;
+  }
   h1 {
     font-size: 1.2rem;
   }
 }
 
+.team-list {
+  background-color: #e2ebf2;
+}
 .teams a {
   text-decoration: none;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
 }
 
 .team-list h6 {
-  font-size: 0.4rem;
+  font-size: 1rem;
 }
 .teams-list a {
   color: green;
@@ -102,7 +109,6 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 0.5rem;
 }
 
 .live-icons img {
@@ -128,6 +134,12 @@
     margin-bottom: 3rem;
   }
 }
+.best-player img {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  border: 3px solid #e2ebf2;
+}
 
 .best-player i {
   font-size: 10px;
@@ -135,6 +147,10 @@
 
 .primary-buttons {
   align-items: center;
+}
+
+.col-lg-2 h5 {
+  font-size: 1rem;
 }
 
 // filter section style
@@ -150,6 +166,9 @@
 .filtered-matches {
   position: relative;
   width: 680px;
+  h6 {
+    font-size: 0.8rem;
+  }
 }
 
 .filtered-matches-1 {
@@ -166,4 +185,33 @@
 .create-game select {
   margin-left: 5px;
   padding: 5px;
+}
+
+//Queries
+@media (max-width: 1240px) {
+  html {
+    font-size: min(3vw, 10px);
+  }
+
+  .home-img {
+    padding: 40px;
+  }
+  .lives {
+    width: 800px;
+  }
+  .live-matches {
+    height: 780px;
+    width: 10px;
+  }
+
+  .filtered-matches {
+    position: relative;
+    width: 550px;
+    h6 {
+      font-size: 0.8rem;
+    }
+  }
+  .trending-section {
+    width: 50px;
+  }
 }

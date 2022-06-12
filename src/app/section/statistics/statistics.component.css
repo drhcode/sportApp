@@ -1,0 +1,33 @@
+.results {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 128, 0, 0.205);
+  padding: 1.5rem;
+  width: 50rem;
+  border-radius: 1rem;
+  margin: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.results h6 {
+  font-size: 1.2rem;
+}
+
+.results img {
+  height: 6.5rem;
+  width: 6.5rem;
+  border-radius: 50%;
+  border: 3px solid #e2ebf2;
+}
+/*# sourceMappingURL=statistics.component.css.map */

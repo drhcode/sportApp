@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "example.component.scss"
+        "playermodal.component.scss"
     ],
     "names": [],
-    "file": "example.component.css"
+    "file": "playermodal.component.css"
 }

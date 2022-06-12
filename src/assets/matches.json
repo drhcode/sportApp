@@ -1,72 +1,110 @@
 [
   {
-    "time": "19.30",
-    "location": "London",
-    "Manchester": {
-      "name": "Manchester City",
-      "score": 3,
-      "logo": "assets/img/teams-logo/manchester.png"
-    },
-    "Aston Villa": {
-      "name": "Aston Villa",
-      "score": 2,
-      "logo": "assets/img/teams-logo/astonvilla.png"
-    }
+    "id": 1,
+    "team1Name": "Everton FC",
+    "team1logo": "assets/img/teams-logo/everton.png",
+    "team1goals": 2,
+    "team2Name": "Real Madrid",
+    "team2goals": 1,
+    "team2logo": "assets/img/teams-logo/realmadrid.png",
+    "dateOfMatch": "2022-08-10",
+    "timeOfMatch": "21:30",
+    "location": "London"
   },
   {
-    "time": "19.30",
-    "location": "Lisbon",
-    "West Ham": {
-      "name": "West Ham",
-      "score": 2,
-      "logo": "assets/img/teams-logo/westham.png"
-    },
-    "Stoke City": {
-      "name": "Stoke City",
-      "score": 3,
-      "logo": "assets/img/teams-logo/stokecity.png"
-    }
+    "id": 2,
+    "team1Name": "Aston Villa",
+    "team1logo": "assets/img/teams-logo/astonvilla.png",
+    "team1goals": 0,
+    "team2Name": "Stoke City FC",
+    "team2goals": 1,
+    "team2logo": "assets/img/teams-logo/stoke.png",
+    "dateOfMatch": "2022-08-10",
+    "timeOfMatch": "17:30",
+    "location": "Lisbon"
   },
   {
-    "time": "19.30",
-    "location": "London",
-    "Sunderland": {
-      "name": "Sunderland",
-      "score": 1,
-      "logo": "assets/img/teams-logo/sunderland.png"
-    },
-    "Everton": {
-      "name": "Everton",
-      "score": 2,
-      "logo": "assets/img/teams-logo/everton.png"
-    }
+    "id": 3,
+    "team1Name": "Real Madrid",
+    "team1logo": "assets/img/teams-logo/realmadrid.png",
+    "team1goals": 4,
+    "team2Name": "Westhma FC",
+    "team2goals": 3,
+    "team2logo": "assets/img/teams-logo/westham.png",
+    "dateOfMatch": "2022-05-10",
+    "timeOfMatch": "15:30",
+    "location": "London"
   },
   {
-    "time": "19.30",
-    "location": "London",
-    "Manchester City": {
-      "name": "Manchester City",
-      "score": 2,
-      "logo": "assets/img/teams-logo/manchester.png"
-    },
-    "Aston Villa": {
-      "name": "Aston Villa",
-      "score": 2,
-      "logo": "assets/img/teams-logo/astonvilla.png"
-    }
+    "id": 4,
+    "team1Name": "Stoke city FC",
+    "team1logo": "assets/img/teams-logo/stoke.png",
+    "team1goals": 0,
+    "team2Name": "Everton FC",
+    "team2goals": 2,
+    "team2logo": "assets/img/teams-logo/everton.png",
+    "dateOfMatch": "2021-05-10",
+    "timeOfGame": "14:30",
+    "location": "Lisbon"
   },
   {
-    "time": "19.30",
-    "location": "London",
-    "Everton": {
-      "name": "Everton",
-      "score": 2,
-      "logo": "assets/img/teams-logo/everton.png"
-    },
-    "Stoke City": {
-      "name": "Stoke City",
-      "score": 2,
-      "logo": "assets/img/teams-logo/stokecity.png"
-    }
+    "id": 5,
+    "team1Name": "Manchester City",
+    "team1logo": "assets/img/teams-logo/everton.png",
+    "team1goals": 0,
+    "team2Name": "Stoke City",
+    "team2goals": 1,
+    "team2logo": "assets/img/teams-logo/westham.png",
+    "dateofmatch": "2021-05-10",
+    "time": "20:30",
+    "location": "London"
+  },
+  {
+    "id": 6,
+    "team1Name": "Sunderland",
+    "team1logo": "assets/img/teams-logo/sunderland.png",
+    "team1goals": 1,
+    "team2Name": "Stoke City FC",
+    "team2goals": 1,
+    "team2logo": "assets/img/teams-logo/stoke.png",
+    "dateofmatch": "2021-11-10",
+    "timeOfMatch": "19:30",
+    "location": "London"
+  },
+  {
+    "id": 7,
+    "team1Name": "Aston Villa",
+    "team1logo": "assets/img/teams-logo/astonvilla.png",
+    "team1goals": 2,
+    "team2Name": "Real Madrid",
+    "team2goals": 3,
+    "team2logo": "assets/img/teams-logo/realmadrid.png",
+    "dateOfMatch": "2021-11-10",
+    "timeOfMatch": "17:30",
+    "location": "Lisbon"
+  },
+  {
+    "id": 8,
+    "team1Name": "Manchester City",
+    "team1logo": "assets/img/teams-logo/manchester.png",
+    "team1goals": 2,
+    "team2Name": "Sunderland",
+    "team2goals": 2,
+    "team2logo": "assets/img/teams-logo/sunderland.png",
+    "dateOfMatch": "2021-11-10",
+    "timeOfMatch": "18:30",
+    "location": "Lisbon"
+  },
+  {
+    "id": 9,
+    "team1Name": "",
+    "team1logo": "assets/img/teams-logo/manchester.png",
+    "team1goals": 1,
+    "team2Name": "",
+    "team2goals": 2,
+    "team2logo": "assets/img/teams-logo/sunderland.png",
+    "dateOfMatch": "",
+    "timeOfMatch": "",
+    "location": ""
   }
 ]

@@ -1,5 +1,226 @@
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-/*# sourceMappingURL=home.component.css.map */
+
+.lives {
+  height: 300px;
+  width: 1400px;
+}
+
+.home-img {
+  background-image: url(/assets/img/home.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: cover;
+  padding: 100px;
+}
+
+.col-8 {
+  background: #015c18;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#015c18),
+    color-stop(45%, #008b07),
+    color-stop(99%, #005802)
+  );
+  background: linear-gradient(90deg, #015c18 0%, #008b07 45%, #005802 99%);
+  border-radius: 1rem;
+  margin: 0.5rem;
+}
+
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: 20rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.info h4 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: 3px;
+}
+
+.logo-home img {
+  margin-left: 20rem;
+  margin-bottom: 1rem;
+}
+
+.clock {
+  color: white;
+  margin-left: 20rem;
+}
+
+.clock i {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 15px;
+}
+
+.players {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-left: 20rem;
+  gap: 8.6rem;
+}
+
+.players img {
+  height: 1.8rem;
+  width: 1.8rem;
+  border-radius: 50%;
+  margin-right: -0.5rem;
+  border: 3px solid #e2ebf2;
+}
+
+.live-matches {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-bottom: 5.2rem;
+  padding-top: 1.5rem;
+  background-color: #e2ebf2;
+  border-radius: 10px;
+  padding-left: 1rem;
+  height: 780px;
+  width: 200px;
+}
+
+.live-matches h6 {
+  font-size: 12px;
+}
+
+.live-matches h1 {
+  font-size: 1.2rem;
+}
+
+.teams a {
+  text-decoration: none;
+  font-size: 0.6rem;
+}
+
+.team-list h6 {
+  font-size: 1rem;
+}
+
+.teams-list a {
+  color: green;
+}
+
+.live-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.live-icons img {
+  width: 30px;
+  height: 32px;
+  margin: 0.2rem;
+}
+
+.trending-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-bottom: 6.5rem;
+  padding-top: 1.5rem;
+  background-color: #e2ebf2;
+  border-radius: 10px;
+}
+
+.trending-section .best-player {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.best-player img {
+  height: 6.5rem;
+  width: 6.5rem;
+  border-radius: 50%;
+  border: 3px solid #e2ebf2;
+}
+
+.best-player i {
+  font-size: 10px;
+}
+
+.primary-buttons {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.filter-data select {
+  background-color: #e2ebf2;
+  font-size: 20px;
+  margin-left: 5px;
+  padding: 5px;
+  border: 1px solid #8d8a8a;
+  border-radius: 5px;
+}
+
+.filtered-matches {
+  position: relative;
+  width: 680px;
+}
+
+.filtered-matches h6 {
+  font-size: 0.8rem;
+}
+
+.filtered-matches-1 {
+  background-color: #e2ebf2;
+  padding: 0.5rem;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.filtered-matches-1 a {
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: black;
+}
+
+.create-game select {
+  margin-left: 5px;
+  padding: 5px;
+}

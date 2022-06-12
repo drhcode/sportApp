@@ -1,13 +1,6 @@
 import { Component } from '@angular/core';
 import teamsData from 'src/assets/teams.json';
-
-export interface Teams {
-  team_id: String;
-  name: String;
-  country: String;
-  description: String;
-  logo: String;
-}
+import players from 'src/assets/players.json';
 
 @Component({
   selector: 'app-teams',
@@ -16,4 +9,5 @@ export interface Teams {
 })
 export class TeamsComponent {
   teams = teamsData;
+  playersInfo = players;
 }

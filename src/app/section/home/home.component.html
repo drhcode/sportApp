@@ -2,27 +2,27 @@
 <div class="container">
   <div class="row">
     <div class="col lives">
-      <div class="live-matches justify-content-between">
+      <div class="live-matches">
         <div class="live">
-          <h1>
+          <h4>
             Live matches
             <a href="#"><i class="fa-solid fa-arrow-left"> </i></a> &nbsp;
             <a href="#"><i class="fa-solid fa-arrow-right"> </i></a>
-          </h1>
+          </h4>
 
           <div class="live-icons justify-content-between">
             <img src="assets/img/teams-logo/manchester.png" />
-            <h6>3 : 2 &nbsp;</h6>
+            <h6>3 : 2</h6>
             <img src="assets/img/teams-logo/realmadrid.png" />
           </div>
           <div class="teams">
             <h1>Teams</h1>
             <div class="teams-list live-icons" *ngFor="let team of homeTeams">
-              <img src="assets/img/teams-logo/manchester.png" />
+              <img src="{{ team.logo }}" />
               <h6>{{ team.name }}</h6>
-              &nbsp;&nbsp;
-              <a href="#"
-                >See profile &nbsp;<i class="fa-solid fa-arrow-right"> </i
+
+              <a href="/players"
+                >Profile &nbsp;<i class="fa-solid fa-arrow-right"> </i
               ></a>
             </div>
           </div>
@@ -34,13 +34,11 @@
               class="teams-list live-icons"
               *ngFor="let player of findBestPlayer(Players)"
             >
-              <img src="assets/img/teams-logo/manchester.png" />
-              <h6>{{ player.firstName }}</h6>
+              <img src="{{ player.logo }}" />
+              <h6>{{ player.firstName }} {{ player.lastName }}</h6>
               &nbsp;&nbsp;
-              <a href="#"
-                >{{ player.goals }} &nbsp;<i
-                  class="fa-solid fa-chart-column"
-                ></i
+              <a href="/players"
+                >{{ player.goals }} &nbsp;<i class="fa-solid fa-futbol"></i
               ></a>
             </div>
           </div>
@@ -48,7 +46,7 @@
       </div>
     </div>
 
-    <!-- **** Main Div***-->
+    <!-- **** Main Section***-->
     <div class="col-8">
       <div class="home-img">
         <div class="info">
@@ -78,30 +76,22 @@
     <div class="col">
       <div class="trending-section">
         <div class="trendig">
-          <h6>
+          <h4>
             Trending Now
             <a href="#"><i class="fa-solid fa-arrow-left"> </i></a> &nbsp;
             <a href="#"><i class="fa-solid fa-arrow-right"> </i></a>
-          </h6>
-          <div class="trending-img">
-            <img
-              src="assets\img\logo.png"
-              width="100"
-              height="100"
-              class="rounded-circle"
-            />
-          </div>
+          </h4>
+
           <div class="best-player" *ngFor="let player of bestPlayer(Players)">
-            <h6>{{ player.firstName }} {{ player.lastName }}</h6>
+            <img src="{{ player.logo }}" />
+            <h1>{{ player.firstName }} {{ player.lastName }}</h1>
             <small>
               <i class="fa-solid fa-futbol"></i> &nbsp;
-              {{ player.goals }} Goals<</small
+              {{ player.goals }} Goals</small
             >
           </div>
           <div class="d-flex justify-content-center">
-            <button type="button" class="btn btn-outline-info">
-              View Profile
-            </button>
+            <a class="btn btn-outline-info" href="/players"> View Profile</a>
           </div>
         </div>
       </div>
@@ -110,36 +100,29 @@
 </div>
 
 <!-- Latest Matches, Filter, View All  -->
-<div class="container pt-4">
+<div class="container pt-2">
   <div class="row justify-content-md-center">
-    <div class="col col-lg-2">
-      <div class="latest-matches">
-        <h5>Latest Matches</h5>
-      </div>
+    <div class="col col-lg-2 mt-2">
+      <h5>Latest Matches</h5>
     </div>
 
     <!-- ******* Filtered matches controller ******-->
-
     <div class="col-md-auto">
       <div class="filter-data">
-        <select name="football" id="competitons">
-          <option value="football">Football</option>
-          <option value="Volley">Volley</option>
-          <option value="basketball">Basketball</option>
+        <select name="results" id="results" [(ngModel)]="filters.year">
+          <option value="">All</option>
+          <option value="2021">2021</option>
+          <option value="2022">2022</option>
         </select>
-        <select name="results" id="results">
-          <option value="5 vs 5">5 vs 5</option>
-          <option value="6 vs 6">6 vs 6</option>
-          <option value="7 vs 7">7 vs 7</option>
-        </select>
-        <select name="location" id="location">
+        <select name="location" id="location" [(ngModel)]="filters.location">
+          <option value="">All</option>
+          <option value="Lisbon">Lisbon</option>
           <option value="London">London</option>
-          <option value="Bayern">Bayern</option>
         </select>
       </div>
     </div>
     <div class="col col-lg-2">
-      <button class="btn btn-info">View All</button>
+      <a class="btn btn-info" href="/results">View All</a>
     </div>
   </div>
 </div>
@@ -147,106 +130,93 @@
 <!-- filtered matches section -->
 <div class="row justify-content-end pt-2">
   <div class="col-4 mt-4 filtered-matches">
-    <div class="col filtered-matches-1 justify-content-between live-icons">
-      <img src="assets/img/teams-logo/manchester.png" />
-      <h6>Team 1</h6>
-      <small>vs</small>
-      <img src="assets/img/teams-logo/realmadrid.png" />
-      <h6>Team 2</h6>
-      <i class="fa-solid fa-clock"></i> 17: 00 &nbsp; &nbsp;
-      <i class="fa-solid fa-map-marker"></i> London
+    <div
+      class="col filtered-matches-1 justify-content-between live-icons"
+      *ngFor="let info of latestMatches(Matches)"
+    >
+      <small> {{ info.id }}</small>
+      <img src="{{ info.team1logo }}" />
+      <h6>{{ info.team1Name }}</h6>
+      <small> VS </small>
+      <h6>{{ info.team2Name }}</h6>
+      <img src="{{ info.team2logo }}" />
+      <i class="fa-solid fa-clock"></i> {{ info.dateOfMatch }} -
+      {{ info.timeOfMatch }} &nbsp; &nbsp;
+      <i class="fa-solid fa-map-marker"></i>
+      {{ info.location }}
       <i class="fa fa-heart" style="font-size: 25px"></i>
       <a href="#"
         >View Details &nbsp;<i class="fa-solid fa-arrow-right"> </i
       ></a>
-    </div>
-    <div class="col filtered-matches-1 justify-content-between live-icons">
-      <img src="assets/img/teams-logo/manchester.png" />
-      <h6>Team 1</h6>
-      <small>vs</small>
-      <img src="assets/img/teams-logo/realmadrid.png" />
-      <h6>Team 2</h6>
-      <i class="fa-solid fa-clock"></i> 17: 00 &nbsp; &nbsp;
-      <i class="fa-solid fa-map-marker"></i> London
-      <i class="fa fa-heart" style="font-size: 25px; color: red"></i>
-      <a href="#"
-        >View Details &nbsp;<i class="fa-solid fa-arrow-right"> </i
-      ></a>
-    </div>
-    <div class="col filtered-matches-1 justify-content-between live-icons">
-      <img src="assets/img/teams-logo/manchester.png" />
-      <h6>Team 1</h6>
-      <small>vs</small>
-      <img src="assets/img/teams-logo/realmadrid.png" />
-      <h6>Team 2</h6>
-      <i class="fa-solid fa-clock"></i> 17: 00 &nbsp; &nbsp;
-      <i class="fa-solid fa-map-marker"></i> London
-      <i class="fa fa-heart" style="font-size: 25px"></i>
-      <a href="#"
-        >View Details &nbsp;<i class="fa-solid fa-arrow-right"> </i
-      ></a>
-    </div>
-    <div class="col filtered-matches-1 justify-content-between live-icons">
-      <img src="assets/img/teams-logo/manchester.png" />
-      <h6>Team 1</h6>
-      <small>vs</small>
-      <img src="assets/img/teams-logo/realmadrid.png" />
-      <h6>Team 2</h6>
-      <i class="fa-solid fa-clock"></i> 17: 00 &nbsp; &nbsp;
-      <i class="fa-solid fa-map-marker"></i> London
-      <i class="fa fa-heart" style="font-size: 25px"></i>
-      <a href="#"
-        >View Details &nbsp;<i class="fa-solid fa-arrow-right"> </i
-      ></a>
+      <button (click)="deleteGame()">
+        <i
+          class="fa-regular fa-trash-can"
+          style="color: red; font-size: 25px"
+        ></i>
+      </button>
     </div>
   </div>
 
   <!-- create game section -->
   <div class="col-4">
     <div class="create-game">
-      <h5>Create Game</h5>
-      <form>
+      <h1>Create Game</h1>
+      <form [formGroup]="createGameForm" (ngSubmit)="onSubmit()">
         <div class="form-group mb-2">
           <input
             type="text"
             class="form-control"
-            id="gametype"
-            placeholder="Game Type"
-            list="gametype"
+            formControlName="team1Name"
+            placeholder="Team 1"
           />
-          <datalist id="gametype">
-            <option>Football</option>
-            <option>Football</option>
-          </datalist>
         </div>
         <div class="form-group mb-2">
+          <label for="team1logo">Upload Logo:</label>
           <input
-            type="text"
+            type="file"
+            id="team1logo"
+            formControlName="team2logo"
             class="form-control"
-            id="location"
-            placeholder="Select Location"
           />
         </div>
         <div class="form-group mb-2">
           <input
             type="text"
             class="form-control"
-            id="select-ground"
-            placeholder="Select Ground"
+            formControlName="team2Name"
+            placeholder="Team 2"
           />
         </div>
         <div class="form-group mb-2">
-          <input type="date" class="form-control" id="dateofgame" />
+          <label for="team2logo">Upload Logo:</label>
+          <input
+            type="file"
+            id="team2logo"
+            formControlName="team2logo"
+            class="form-control"
+          />
         </div>
         <div class="form-group mb-2">
           <input
-            type="number"
+            type="date"
+            formControlName="dateOfMatch"
             class="form-control"
-            id="numberofplayer"
-            placeholder="Number of players"
           />
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <div class="form-group mb-2">
+          <input
+            type="time"
+            formControlName="timeOfMatch"
+            class="form-control"
+          />
+        </div>
+        <div class="form-group mb-2">
+          <select class="form-control" formControlName="location">
+            <option>Lisbon</option>
+            <option>London</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Create</button>
       </form>
     </div>
   </div>

@@ -1,0 +1,20 @@
+{
+  "data": {
+    "match": [
+      {
+        "id": "24836",
+        "home_name": "Moreirense",
+        "away_name": "Vitoria de Guimaraes",
+        "score": "0 - 1",
+        "time": "84"
+      },
+      {
+        "id": "24837",
+        "home_name": "Patronato de Parana",
+        "away_name": "San Lorenzo",
+        "score": "1 - 1",
+        "time": "FT"
+      }
+    ]
+  }
+}
